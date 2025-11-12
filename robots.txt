@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://series.binomugisha.org/sitemap.xml
