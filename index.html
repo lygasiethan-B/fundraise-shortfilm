@@ -126,8 +126,8 @@
             <h1 class="text-4xl md:text-6xl font-bold mb-4">The Fascinating World of Dragonflies, Beetles, and Millipedes</h1>
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Help bring the next story — A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#showcase" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-8 rounded-lg transition duration-300">Watch Film</a>
-                <a href="#support" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-semibold py-3 px-8 rounded-lg transition duration-300">Support Next Film</a>
+                <a href="#showcase" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-8 rounded-lg transition duration-300" onclick="gtag('event', 'watch_film_click', {'button_location': 'hero'});">Watch Film</a>
+                <a href="#support" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-semibold py-3 px-8 rounded-lg transition duration-300" onclick="gtag('event', 'support_button_click', {'button_location': 'hero', 'button_text': 'Support Next Film'});">Support Next Film</a>
             </div>
         </div>
     </section>
@@ -231,6 +231,11 @@
                         <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=NATHAN+BINOMUGISHA%0A773475801%0AMTN+Mobile+MONEY+WALLET%0AInstructions%3A+To+donate%2C+or+make+a+payment%2C+please+copy+the+Account+Details+to+send+money+NATHAN+BINOMUGISHA's+MTN+Mobile+Money+Wallet.&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="MTN Mobile Money QR Code" class="w-64 h-64 object-contain border rounded-lg">
                     </div>
                     <p class="text-center text-sm text-warm-grey">Scan with your MTN Mobile Money app to donate</p>
+                    <div class="text-center mt-4">
+                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'mtn_mobile_money', 'amount': 15.00});" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                            I've Donated via Mobile Money
+                        </button>
+                    </div>
                 </div>
                 
                 <!-- International Support -->
@@ -243,6 +248,11 @@
                     </div>
                     <div class="text-sm mb-4">
                         <p class="text-center text-sm text-warm-grey">Scan to view Bank Transfer Details.</p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'bank_transfer', 'amount': 15.00});" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                            I've Donated via Bank Transfer
+                        </button>
                     </div>
                 </div>
             </div>
@@ -352,8 +362,8 @@
                     <h2 class="text-2xl font-bold mb-4">Help Bring This Story to Life</h2>
                     <p class="mb-6 max-w-2xl mx-auto">Your support enables the creation of impactful documentaries that showcase East Africa's biodiversity and inspire conservation action.</p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#showcase" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Watch Documentary</a>
-                        <a href="#support" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Support Next Film</a>
+                        <a href="#showcase" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300" onclick="gtag('event', 'watch_film_click', {'button_location': 'footer'});">Watch Documentary</a>
+                        <a href="#support" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-semibold py-3 px-6 rounded-lg transition duration-300" onclick="gtag('event', 'support_button_click', {'button_location': 'footer', 'button_text': 'Support Next Film'});">Support Next Film</a>
                         <button id="share-btn" class="bg-savanna-green hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Share This Page</button>
                     </div>
                 </div>
@@ -363,16 +373,16 @@
                         <div>
                             <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
                             <div class="flex flex-wrap gap-4 mb-4">
-                                <a href="https://binomugisha.org" class="hover:text-sunlight-yellow transition">Main Website</a>
-                                <a href="https://video.binomugisha.org" class="hover:text-sunlight-yellow transition">Video Portfolio</a>
-                                <a href="https://media.binomugisha.org" class="hover:text-sunlight-yellow transition">Media Consultancy</a>
-                                <a href="mailto:binomugishacom@gmail.com" class="hover:text-sunlight-yellow transition">Email</a>
+                                <a href="https://binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://binomugisha.org', 'link_text': 'Main Website'});">Main Website</a>
+                                <a href="https://video.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://video.binomugisha.org', 'link_text': 'Video Portfolio'});">Video Portfolio</a>
+                                <a href="https://media.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://media.binomugisha.org', 'link_text': 'Media Consultancy'});">Media Consultancy</a>
+                                <a href="mailto:binomugishacom@gmail.com" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'email_click', {'link_text': 'Email'});">Email</a>
                             </div>
                             <div class="flex space-x-4">
-                                <a href="https://www.youtube.com/@binomugishan" class="hover:text-sunlight-yellow transition">YouTube</a>
-                                <a href="https://www.instagram.com/binomugisha_org/" class="hover:text-sunlight-yellow transition">Instagram</a>
-                                <a href="https://www.linkedin.com/in/binomugisha/" class="hover:text-sunlight-yellow transition">LinkedIn</a>
-                                <a href="https://linktr.ee/BINOMUGISHAN" class="hover:text-sunlight-yellow transition">Linktree</a>
+                                <a href="https://www.youtube.com/@binomugishan" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.youtube.com/@binomugishan', 'link_text': 'YouTube'});">YouTube</a>
+                                <a href="https://www.instagram.com/binomugisha_org/" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.instagram.com/binomugisha_org/', 'link_text': 'Instagram'});">Instagram</a>
+                                <a href="https://www.linkedin.com/in/binomugisha/" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.linkedin.com/in/binomugisha/', 'link_text': 'LinkedIn'});">LinkedIn</a>
+                                <a href="https://linktr.ee/BINOMUGISHAN" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://linktr.ee/BINOMUGISHAN', 'link_text': 'Linktree'});">Linktree</a>
                             </div>
                         </div>
                         <div>
@@ -564,6 +574,120 @@
 
     <!-- JavaScript -->
     <script>
+        // Enhanced event tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Support button clicks tracking
+            document.querySelectorAll('a[href="#support"]').forEach(button => {
+                button.addEventListener('click', function() {
+                    gtag('event', 'support_button_click', {
+                        'button_text': this.textContent,
+                        'page_location': window.location.href,
+                        'button_location': this.closest('section') ? this.closest('section').id : 'unknown'
+                    });
+                });
+            });
+
+            // Watch film button clicks
+            document.querySelectorAll('a[href="#showcase"]').forEach(button => {
+                button.addEventListener('click', function() {
+                    gtag('event', 'watch_film_click', {
+                        'button_text': this.textContent,
+                        'page_location': window.location.href,
+                        'button_location': this.closest('section') ? this.closest('section').id : 'unknown'
+                    });
+                });
+            });
+
+            // Enhanced video tracking
+            const video = document.getElementById('documentary-video');
+            const viewCountElement = document.getElementById('view-count');
+            const modalViewsElement = document.getElementById('modal-views');
+            let viewCount = parseInt(viewCountElement.textContent.replace(',', ''));
+            let hasCountedView = false;
+
+            if (video) {
+                video.addEventListener('play', function() {
+                    if (!hasCountedView) {
+                        viewCount++;
+                        viewCountElement.textContent = viewCount.toLocaleString();
+                        modalViewsElement.textContent = viewCount.toLocaleString();
+                        hasCountedView = true;
+                    }
+                    
+                    gtag('event', 'video_play', {
+                        'video_title': 'The Fascinating World of Dragonflies, Beetles, and Millipedes',
+                        'video_duration': Math.round(video.duration),
+                        'video_current_time': Math.round(video.currentTime)
+                    });
+                });
+
+                video.addEventListener('ended', function() {
+                    gtag('event', 'video_complete', {
+                        'video_title': 'The Fascinating World of Dragonflies, Beetles, and Millipedes',
+                        'video_duration': Math.round(video.duration)
+                    });
+                });
+
+                // Track video progress
+                let lastProgress = 0;
+                video.addEventListener('timeupdate', function() {
+                    const progress = Math.round((video.currentTime / video.duration) * 100);
+                    if (progress >= 25 && lastProgress < 25) {
+                        gtag('event', 'video_progress', {'progress': 25});
+                        lastProgress = 25;
+                    } else if (progress >= 50 && lastProgress < 50) {
+                        gtag('event', 'video_progress', {'progress': 50});
+                        lastProgress = 50;
+                    } else if (progress >= 75 && lastProgress < 75) {
+                        gtag('event', 'video_progress', {'progress': 75});
+                        lastProgress = 75;
+                    }
+                });
+            }
+
+            // FAQ interaction tracking
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach((question, index) => {
+                question.addEventListener('click', function() {
+                    const faqModal = document.getElementById(`faq-modal-${index + 1}`);
+                    faqModal.classList.remove('hidden');
+                    
+                    gtag('event', 'faq_view', {
+                        'faq_question': this.textContent.trim(),
+                        'faq_index': index + 1
+                    });
+                });
+            });
+
+            // Scroll depth tracking
+            let scrollDepth = 0;
+            window.addEventListener('scroll', function() {
+                const newDepth = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                if (newDepth > scrollDepth) {
+                    if (newDepth >= 25 && scrollDepth < 25) {
+                        gtag('event', 'scroll_depth', {'scroll_percentage': 25});
+                    } else if (newDepth >= 50 && scrollDepth < 50) {
+                        gtag('event', 'scroll_depth', {'scroll_percentage': 50});
+                    } else if (newDepth >= 75 && scrollDepth < 75) {
+                        gtag('event', 'scroll_depth', {'scroll_percentage': 75});
+                    } else if (newDepth >= 90 && scrollDepth < 90) {
+                        gtag('event', 'scroll_depth', {'scroll_percentage': 90});
+                    }
+                    scrollDepth = newDepth;
+                }
+            });
+
+            // Time on page tracking
+            let startTime = Date.now();
+            window.addEventListener('beforeunload', function() {
+                const timeSpent = Math.round((Date.now() - startTime) / 1000);
+                gtag('event', 'time_on_page', {
+                    'time_seconds': timeSpent,
+                    'page_location': window.location.href
+                });
+            });
+        });
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -574,27 +698,14 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    
+                    // Track section visits
+                    gtag('event', 'section_visit', {
+                        'section_id': this.getAttribute('href').substring(1),
+                        'section_name': this.textContent.trim()
+                    });
                 }
             });
-        });
-
-        // Video view counter (simulated)
-        const video = document.getElementById('documentary-video');
-        const viewCountElement = document.getElementById('view-count');
-        const modalViewsElement = document.getElementById('modal-views');
-        let viewCount = parseInt(viewCountElement.textContent.replace(',', ''));
-        let hasCountedView = false;
-
-        video.addEventListener('play', function() {
-            if (!hasCountedView) {
-                viewCount++;
-                viewCountElement.textContent = viewCount.toLocaleString();
-                modalViewsElement.textContent = viewCount.toLocaleString();
-                hasCountedView = true;
-                
-                // In a real implementation, you would send this data to your analytics backend
-                console.log('View counted: ', viewCount);
-            }
         });
 
         // Modal functionality
@@ -604,6 +715,7 @@
 
         analyticsBtn.addEventListener('click', function() {
             analyticsModal.classList.remove('hidden');
+            gtag('event', 'analytics_view', {});
         });
 
         closeAnalytics.addEventListener('click', function() {
@@ -617,6 +729,7 @@
 
         termsBtn.addEventListener('click', function() {
             termsModal.classList.remove('hidden');
+            gtag('event', 'terms_view', {});
         });
 
         closeTerms.addEventListener('click', function() {
@@ -630,6 +743,7 @@
 
         privacyBtn.addEventListener('click', function() {
             privacyModal.classList.remove('hidden');
+            gtag('event', 'privacy_view', {});
         });
 
         closePrivacy.addEventListener('click', function() {
@@ -637,15 +751,7 @@
         });
 
         // FAQ modal functionality
-        const faqQuestions = document.querySelectorAll('.faq-question');
         const closeFaqButtons = document.querySelectorAll('.close-faq');
-
-        faqQuestions.forEach((question, index) => {
-            question.addEventListener('click', function() {
-                const faqModal = document.getElementById(`faq-modal-${index + 1}`);
-                faqModal.classList.remove('hidden');
-            });
-        });
 
         closeFaqButtons.forEach(button => {
             button.addEventListener('click', function() {
@@ -663,12 +769,23 @@
                     text: 'Help bring this Ugandan documentary to life',
                     url: window.location.href
                 })
-                .then(() => console.log('Successful share'))
+                .then(() => {
+                    gtag('event', 'share', {
+                        'method': 'native_share',
+                        'content_type': 'page',
+                        'content_id': window.location.href
+                    });
+                })
                 .catch((error) => console.log('Error sharing:', error));
             } else {
                 // Fallback for browsers that don't support the Web Share API
                 navigator.clipboard.writeText(window.location.href)
                     .then(() => {
+                        gtag('event', 'share', {
+                            'method': 'copy_link',
+                            'content_type': 'page',
+                            'content_id': window.location.href
+                        });
                         alert('Page URL copied to clipboard!');
                     })
                     .catch(err => {
@@ -721,37 +838,6 @@
 
         // Update progress every 30 seconds (for demo purposes)
         setInterval(updateProgress, 30000);
-    </script>
-
-    <!-- Google tag (gtag.js) event -->
-    <script>
-      gtag('event', 'page_view', {
-        // <event_parameters>
-      });
-    </script>
-    <!-- Google tag (gtag.js) event -->
-    <script>
-      gtag('event', 'scroll', {
-        // <event_parameters>
-      });
-    </script>
-    <!-- Google tag (gtag.js) event -->
-    <script>
-      gtag('event', 'user_engagement', {
-        // <event_parameters>
-      });
-    </script>
-    <!-- Google tag (gtag.js) event -->
-    <script>
-      gtag('event', 'first_visit', {
-        // <event_parameters>
-      });
-    </script>
-    <!-- Google tag (gtag.js) event -->
-    <script>
-      gtag('event', 'session_start', {
-        // <event_parameters>
-      });
     </script>
 </body>
 </html>
