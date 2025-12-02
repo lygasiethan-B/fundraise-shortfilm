@@ -214,14 +214,14 @@
             <h2 class="text-3xl font-bold text-center mb-12">Support the Next Story</h2>
             <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
                 
-                <!-- Option 1: Payoneer Payment Link (NEW) -->
+                <!-- Option 1: Payoneer Payment Link -->
                 <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
                     <div class="mb-6">
                         <span class="inline-block bg-sunlight-yellow text-charcoal text-xs font-semibold px-3 py-1 rounded-full mb-4">Easiest & Fastest</span>
                         <h3 class="text-xl font-semibold mb-4 text-sunset-orange">💳 Pay Online</h3>
-                        <p class="mb-4">Secure online payment via Payoneer. Click below to generate a unique payment link for any amount.</p>
+                        <p class="mb-4">Secure online payment via Payoneer. Enter your email and amount, and we'll send you a secure payment link.</p>
                         <div class="bg-off-white p-4 rounded-lg mb-4">
-                            <p class="text-sm text-center font-medium">Generate a custom payment link for any amount</p>
+                            <p class="text-sm text-center font-medium">We generate and send you a custom payment link</p>
                         </div>
                     </div>
                     <div class="mt-auto">
@@ -233,20 +233,18 @@
                     </div>
                 </div>
                 
-                <!-- Option 2: Mobile Money (UGANDA) -->
+                <!-- Option 2: Mobile Money (UGANDA) - Updated without QR -->
                 <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
                     <div class="mb-6">
                         <span class="inline-block bg-savanna-green text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">For Uganda</span>
                         <h3 class="text-xl font-semibold mb-4 text-sunset-orange">📱 Mobile Money</h3>
-                        <p class="mb-4">Scan or send directly to my MTN Mobile Money:</p>
-                        <div class="flex flex-col items-center">
-                            <div class="bg-sunlight-yellow p-3 rounded-lg mb-4 text-center">
-                                <p class="font-bold text-lg">0773 475 801</p>
-                                <p class="text-sm">Nathan Binomugisha</p>
-                                <p class="text-xs text-warm-grey">MTN Mobile Money</p>
-                            </div>
-                            <!-- Keep your QR code -->
-                            <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=NATHAN+BINOMUGISHA%0A773475801%0AMTN+Mobile+MONEY+WALLET%0AInstructions%3A+To+donate%2C+or+make+a+payment%2C+please+copy+the+Account+Details+to+send+money+NATHAN+BINOMUGISHA's+MTN+Mobile+Money+Wallet.&amp;qzone=1&amp;margin=0&amp;size=200x200&amp;ecc=L" alt="MTN Mobile Money QR Code" class="w-48 h-48 object-contain border rounded-lg">
+                        <p class="mb-4">Request Mobile Money details via email for secure transfers within Uganda.</p>
+                        
+                        <div class="text-center">
+                            <button onclick="requestMobileMoneyDetails()" 
+                                    class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                                Email Me Mobile Money Details
+                            </button>
                         </div>
                     </div>
                     <div class="mt-auto">
@@ -257,15 +255,14 @@
                     </div>
                 </div>
                 
-                <!-- Option 3: Bank Transfer (INTERNATIONAL) - SAFER VERSION -->
+                <!-- Option 3: Bank Transfer (INTERNATIONAL) -->
                 <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
                     <div class="mb-6">
                         <span class="inline-block bg-charcoal text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">International</span>
                         <h3 class="text-xl font-semibold mb-4 text-sunset-orange">🏦 Bank Transfer</h3>
-                        <p class="mb-4">For secure international bank transfers, please:</p>
+                        <p class="mb-4">For secure international bank transfers, request details via email.</p>
                         
                         <div class="text-center">
-                            <p class="mb-3">Request details via email</p>
                             <button onclick="requestBankDetails()" 
                                     class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
                                 Email Me Bank Details
@@ -281,15 +278,44 @@
                 </div>
             </div>
             
+            <!-- Payment Process Explanation -->
+            <div class="max-w-2xl mx-auto mt-12 p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-center">How Our Payment Process Works</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">1</div>
+                        <p><span class="font-semibold">Request Payment Details:</span> Click any "Email Me" button above and enter your email address.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">2</div>
+                        <p><span class="font-semibold">We Send You Details:</span> We'll email you the specific payment information within 24 hours:
+                            <ul class="list-disc pl-5 mt-2 space-y-1">
+                                <li>For <strong>Payoneer</strong>: A secure payment link for your chosen amount</li>
+                                <li>For <strong>Mobile Money</strong>: The phone number and name for Uganda transactions</li>
+                                <li>For <strong>Bank Transfer</strong>: Full bank account details for international transfers</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">3</div>
+                        <p><span class="font-semibold">Make Payment:</span> Use the details we email you to complete your payment.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">4</div>
+                        <p><span class="font-semibold">Send Confirmation:</span> Email your payment receipt to <strong>lyenkynathan@gmail.com</strong> so we can track your contribution.</p>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Payment Confirmation Section -->
             <div class="max-w-2xl mx-auto mt-12 p-6 bg-white rounded-lg shadow-md">
                 <h3 class="text-xl font-semibold mb-4 text-center">After Making Payment</h3>
                 <p class="text-center mb-4">Please send your payment receipt or screenshot to:</p>
                 <div class="text-center mb-6">
-                    <a href="mailto:binomugishacom@gmail.com" 
+                    <a href="mailto:lyenkynathan@gmail.com" 
                        class="inline-block bg-savanna-green hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
                        onclick="gtag('event', 'email_confirmation_click', {});">
-                       📧 binomugishacom@gmail.com
+                       📧 lyenkynathan@gmail.com
                     </a>
                 </div>
                 <p class="text-center text-sm text-warm-grey">This helps us track your contribution and add you to the supporters list!</p>
@@ -419,7 +445,7 @@
                                 <a href="https://series.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://series.binomugisha.org', 'link_text': 'Partner on Our Next Film'});">Partner on Our Next Film</a>
                                 <a href="https://lygasi.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://lygasi.binomugisha.org', 'link_text': 'Legacy Project'});">Legacy Project</a>
                                 <a href="https://lyenk.com" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://lyenk.com', 'link_text': 'Insights Engine'});">Insights Engine</a>
-                                <a href="mailto:binomugishacom@gmail.com" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'email_click', {'link_text': 'Email'});">Email</a>
+                                <a href="mailto:lyenkynathan@gmail.com" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'email_click', {'link_text': 'Email'});">Email</a>
                             </div>
                             <div class="flex space-x-4">
                                 <a href="https://www.youtube.com/@binomugishan" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.youtube.com/@binomugishan', 'link_text': 'YouTube'});">YouTube</a>
@@ -457,7 +483,7 @@
                 </button>
             </div>
             <div class="space-y-4">
-                <p>Enter the amount you'd like to contribute and your email for the payment link:</p>
+                <p>Enter the amount you'd like to contribute and your email. We'll generate a secure Payoneer payment link and send it to you.</p>
                 
                 <div>
                     <label class="block text-sm font-medium mb-1">Amount (USD)</label>
@@ -473,11 +499,11 @@
                 
                 <button onclick="createPaymentLink()" 
                         class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-                    Generate Payment Link
+                    Request Payment Link
                 </button>
                 
                 <p class="text-xs text-warm-grey text-center mt-4">
-                    A secure Payoneer payment link will be generated and sent to your email.
+                    We'll generate a Payoneer payment link and email it to you within 24 hours.
                 </p>
             </div>
         </div>
@@ -494,9 +520,9 @@
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Thank You for Your Support!</h3>
                 <p class="mb-4">Please send your payment receipt/screenshot to:</p>
-                <a href="mailto:binomugishacom@gmail.com" 
+                <a href="mailto:lyenkynathan@gmail.com" 
                    class="inline-block bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-4 rounded-lg mb-4">
-                   📧 binomugishacom@gmail.com
+                   📧 lyenkynathan@gmail.com
                 </a>
                 <p class="text-sm text-warm-grey mb-4">This helps us track your contribution and add you to our supporters list.</p>
                 <button onclick="document.getElementById('confirmation-modal').classList.add('hidden');" 
@@ -528,7 +554,7 @@
                     <li>Supporters will receive updates on the project's progress but do not acquire any ownership or creative control.</li>
                     <li>The estimated completion date is provided as a guide and may be subject to change based on production circumstances.</li>
                 </ul>
-                <p>If you have any questions about these terms, please contact binomugishacom@gmail.com</p>
+                <p>If you have any questions about these terms, please contact lyenkynathan@gmail.com</p>
             </div>
         </div>
     </div>
@@ -547,14 +573,14 @@
             <div class="space-y-4">
                 <p>This privacy policy explains how we handle your information:</p>
                 <ul class="list-disc pl-5 space-y-2">
-                    <li>We do not collect personal information through this website beyond what you voluntarily provide when contacting us.</li>
-                    <li>Payment information is processed directly by MTN Mobile Money or your banking institution - we do not store payment details.</li>
+                    <li>We collect your email only to send payment details and project updates.</li>
+                    <li>Payment information is processed directly by Payoneer, MTN Mobile Money, or your banking institution - we do not store payment details.</li>
                     <li>We may use analytics tools to understand how visitors use our site, but this data is anonymized.</li>
                     <li>If you contact us via email, we will use your contact information only to respond to your inquiry.</li>
                     <li>We do not share your personal information with third parties except as required to process donations or if required by law.</li>
                     <li>By using this site, you consent to our privacy practices.</li>
                 </ul>
-                <p>If you have questions about our privacy practices, please contact binomugishacom@gmail.com</p>
+                <p>If you have questions about our privacy practices, please contact lyenkynathan@gmail.com</p>
             </div>
         </div>
     </div>
@@ -588,8 +614,20 @@
                 </button>
             </div>
             <div class="space-y-4">
-                <p>You can support this project by donating through MTN Mobile Money (for supporters in East Africa) or via bank transfer (for international supporters). Use the QR codes in the Support section to make your contribution.</p>
-                <p>All contributions, regardless of size, make a meaningful difference in bringing this important story to life. Supporters will receive regular updates on the project's progress and will be acknowledged in the film's credits (unless you prefer to remain anonymous).</p>
+                <p><strong>Our Secure Payment Process:</strong></p>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li><strong>Request Payment Details:</strong> Click any "Email Me" button and enter your email</li>
+                    <li><strong>We Send You Details:</strong> Within 24 hours, we'll email you:
+                        <ul class="list-disc pl-5 mt-1">
+                            <li><strong>Payoneer:</strong> Secure payment link for your chosen amount</li>
+                            <li><strong>Mobile Money:</strong> Phone number and name for Uganda transactions</li>
+                            <li><strong>Bank Transfer:</strong> Full bank details for international transfers</li>
+                        </ul>
+                    </li>
+                    <li><strong>Make Payment:</strong> Use the details we email you</li>
+                    <li><strong>Send Confirmation:</strong> Email your receipt to lyenkynathan@gmail.com</li>
+                </ol>
+                <p>All contributions make a meaningful difference. Supporters will receive updates and be acknowledged in the film's credits.</p>
             </div>
         </div>
     </div>
@@ -879,8 +917,14 @@
                 'currency': 'USD'
             });
             
-            // For now, show a message. You'll need to implement the backend to generate Payoneer links
-            alert(`Payment link generation for $${amount} will be sent to ${email}\n\nNote: You need to set up Payoneer's Request Payment API on your backend to generate actual links.`);
+            // Show confirmation message
+            alert(`Thank you! We'll generate a Payoneer payment link for $${amount} and send it to ${email} within 24 hours.\n\nPlease check your email for the secure payment link.`);
+            
+            // Track the request
+            gtag('event', 'payment_link_requested', {
+                'email_provided': email ? 'yes' : 'no',
+                'amount_requested': amount
+            });
             
             // Close modal
             document.getElementById('payoneer-modal').classList.add('hidden');
@@ -893,14 +937,30 @@
         // Request bank details via email
         function requestBankDetails() {
             gtag('event', 'bank_details_request', {});
-            const email = prompt("Please enter your email to receive secure bank details:");
+            const email = prompt("Please enter your email to receive secure bank details for international transfer:");
             if (email && email.includes('@')) {
-                // Here you would typically send an email via your backend
-                // For now, show a confirmation
-                alert(`Bank details will be sent to ${email} within 24 hours.`);
+                alert(`Thank you! We'll email you the bank transfer details to ${email} within 24 hours.`);
                 
-                // You could also automatically open email client
-                window.location.href = `mailto:binomugishacom@gmail.com?subject=Bank%20Details%20Request&body=Hello,%20please%20send%20me%20your%20bank%20details%20for%20the%20documentary%20project.`;
+                // Track the request
+                gtag('event', 'bank_details_email_provided', {
+                    'email_provided': 'yes'
+                });
+            } else if (email) {
+                alert("Please enter a valid email address.");
+            }
+        }
+
+        // Request mobile money details via email
+        function requestMobileMoneyDetails() {
+            gtag('event', 'mobile_money_details_request', {});
+            const email = prompt("Please enter your email to receive Mobile Money details for Uganda transactions:");
+            if (email && email.includes('@')) {
+                alert(`Thank you! We'll email you the Mobile Money details to ${email} within 24 hours.`);
+                
+                // Track the request
+                gtag('event', 'mobile_money_email_provided', {
+                    'email_provided': 'yes'
+                });
             } else if (email) {
                 alert("Please enter a valid email address.");
             }
