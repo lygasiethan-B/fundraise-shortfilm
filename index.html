@@ -162,14 +162,6 @@
                 <div class="mt-6 text-center">
                     <h3 class="text-2xl font-semibold mb-4">Documentary: The Fascinating World of Dragonflies, Beetles, and Millipedes</h3>
                     <p class="text-lg mb-6">This documentary has raised awareness about Uganda's insect biodiversity, contributing to conservation efforts and environmental education across East Africa.</p>
-                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <div class="bg-sunlight-yellow text-charcoal py-2 px-4 rounded-lg">
-                            <span class="font-bold" id="view-count">1,247</span> Views
-                        </div>
-                        <button id="analytics-btn" class="bg-savanna-green text-white py-2 px-4 rounded-lg hover:bg-opacity-90 transition">
-                            View Analytics
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -192,7 +184,6 @@
                         <h3 class="text-xl font-semibold mb-4">Fundraising Goal</h3>
                         <div class="bg-savanna-green text-white p-4 rounded-lg text-center">
                             <p class="text-2xl font-bold">$15,000 USD</p>
-                            <p class="text-sm mt-1">(Approximately UGX 56,000,000)</p>
                         </div>
                     </div>
                     <div>
@@ -221,42 +212,91 @@
     <section id="support" class="py-16 bg-off-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Support the Next Story</h2>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-                <!-- Local Support -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4 text-sunset-orange">Support from Uganda</h3>
-                    <p class="mb-6">Use MTN Mobile Money to contribute directly to the project:</p>
-                    <div class="flex justify-center mb-6">
-                        <!-- Replace with your MTN Mobile Money QR code -->
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=NATHAN+BINOMUGISHA%0A773475801%0AMTN+Mobile+MONEY+WALLET%0AInstructions%3A+To+donate%2C+or+make+a+payment%2C+please+copy+the+Account+Details+to+send+money+NATHAN+BINOMUGISHA's+MTN+Mobile+Money+Wallet.&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="MTN Mobile Money QR Code" class="w-64 h-64 object-contain border rounded-lg">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+                
+                <!-- Option 1: Payoneer Payment Link (NEW) -->
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
+                    <div class="mb-6">
+                        <span class="inline-block bg-sunlight-yellow text-charcoal text-xs font-semibold px-3 py-1 rounded-full mb-4">Easiest & Fastest</span>
+                        <h3 class="text-xl font-semibold mb-4 text-sunset-orange">💳 Pay Online</h3>
+                        <p class="mb-4">Secure online payment via Payoneer. Click below to generate a unique payment link for any amount.</p>
+                        <div class="bg-off-white p-4 rounded-lg mb-4">
+                            <p class="text-sm text-center font-medium">Generate a custom payment link for any amount</p>
+                        </div>
                     </div>
-                    <p class="text-center text-sm text-warm-grey">Scan with your MTN Mobile Money app to donate</p>
-                    <div class="text-center mt-4">
-                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'mtn_mobile_money', 'amount': 15.00});" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
-                            I've Donated via Mobile Money
+                    <div class="mt-auto">
+                        <button onclick="generatePayoneerLink()" 
+                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 mb-3">
+                            Get Payment Link
+                        </button>
+                        <p class="text-xs text-warm-grey text-center">Secure • Instant • Receipt Provided</p>
+                    </div>
+                </div>
+                
+                <!-- Option 2: Mobile Money (UGANDA) -->
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
+                    <div class="mb-6">
+                        <span class="inline-block bg-savanna-green text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">For Uganda</span>
+                        <h3 class="text-xl font-semibold mb-4 text-sunset-orange">📱 Mobile Money</h3>
+                        <p class="mb-4">Scan or send directly to my MTN Mobile Money:</p>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-sunlight-yellow p-3 rounded-lg mb-4 text-center">
+                                <p class="font-bold text-lg">0773 475 801</p>
+                                <p class="text-sm">Nathan Binomugisha</p>
+                                <p class="text-xs text-warm-grey">MTN Mobile Money</p>
+                            </div>
+                            <!-- Keep your QR code -->
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=NATHAN+BINOMUGISHA%0A773475801%0AMTN+Mobile+MONEY+WALLET%0AInstructions%3A+To+donate%2C+or+make+a+payment%2C+please+copy+the+Account+Details+to+send+money+NATHAN+BINOMUGISHA's+MTN+Mobile+Money+Wallet.&amp;qzone=1&amp;margin=0&amp;size=200x200&amp;ecc=L" alt="MTN Mobile Money QR Code" class="w-48 h-48 object-contain border rounded-lg">
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'mtn_mobile_money', 'amount': 15.00}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
+                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                            I've Sent Mobile Money
                         </button>
                     </div>
                 </div>
                 
-                <!-- International Support -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4 text-sunset-orange">Support from Abroad</h3>
-                    <p class="mb-6">Use bank transfer to contribute to the project:</p>
-                    <div class="flex justify-center mb-6">
-                        <!-- Stanbic Bank QR Code -->
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=Bank+Name%3A+%09Stanbic+Bank%0AAccount+Name+Holder%3A+%09Nathan+Binomugisha%0AAC+Number%3A+%099030017606556%0ABranch%3A+%09Kawempe+Branch%0ASWIFT%2FBIC+Code%3A+SBICUGKX%0AInstructions%3A+To+donate+or+make+a+payment%2C+please+copy+the+Account+Details+and+use+your+bank's+mobile+app+or+website+for+a+local+bank+transfer.&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="Stanbic Bank QR Code" class="w-64 h-64 object-contain border rounded-lg">
+                <!-- Option 3: Bank Transfer (INTERNATIONAL) - SAFER VERSION -->
+                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
+                    <div class="mb-6">
+                        <span class="inline-block bg-charcoal text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">International</span>
+                        <h3 class="text-xl font-semibold mb-4 text-sunset-orange">🏦 Bank Transfer</h3>
+                        <p class="mb-4">For secure international bank transfers, please:</p>
+                        
+                        <div class="text-center">
+                            <p class="mb-3">Request details via email</p>
+                            <button onclick="requestBankDetails()" 
+                                    class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                                Email Me Bank Details
+                            </button>
+                        </div>
                     </div>
-                    <div class="text-sm mb-4">
-                        <p class="text-center text-sm text-warm-grey">Scan to view Bank Transfer Details.</p>
-                    </div>
-                    <div class="text-center mt-4">
-                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'bank_transfer', 'amount': 15.00});" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
-                            I've Donated via Bank Transfer
+                    <div class="mt-auto">
+                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'bank_transfer', 'amount': 15.00}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
+                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                            I've Made Bank Transfer
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="max-w-2xl mx-auto mt-12 text-center">
+            
+            <!-- Payment Confirmation Section -->
+            <div class="max-w-2xl mx-auto mt-12 p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-center">After Making Payment</h3>
+                <p class="text-center mb-4">Please send your payment receipt or screenshot to:</p>
+                <div class="text-center mb-6">
+                    <a href="mailto:binomugishacom@gmail.com" 
+                       class="inline-block bg-savanna-green hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+                       onclick="gtag('event', 'email_confirmation_click', {});">
+                       📧 binomugishacom@gmail.com
+                    </a>
+                </div>
+                <p class="text-center text-sm text-warm-grey">This helps us track your contribution and add you to the supporters list!</p>
+            </div>
+            
+            <!-- Trust Signals -->
+            <div class="max-w-2xl mx-auto mt-8 text-center">
                 <div class="flex flex-wrap justify-center gap-6 text-savanna-green">
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -268,13 +308,13 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                         </svg>
-                        Transparent updates
+                        Receipt provided
                     </div>
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                         </svg>
-                        Real impact
+                        Updates & credits
                     </div>
                 </div>
             </div>
@@ -376,6 +416,9 @@
                                 <a href="https://binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://binomugisha.org', 'link_text': 'Main Website'});">Main Website</a>
                                 <a href="https://video.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://video.binomugisha.org', 'link_text': 'Video Portfolio'});">Video Portfolio</a>
                                 <a href="https://media.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://media.binomugisha.org', 'link_text': 'Media Consultancy'});">Media Consultancy</a>
+                                <a href="https://series.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://series.binomugisha.org', 'link_text': 'Partner on Our Next Film'});">Partner on Our Next Film</a>
+                                <a href="https://lygasi.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://lygasi.binomugisha.org', 'link_text': 'Legacy Project'});">Legacy Project</a>
+                                <a href="https://lyenk.com" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://lyenk.com', 'link_text': 'Insights Engine'});">Insights Engine</a>
                                 <a href="mailto:binomugishacom@gmail.com" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'email_click', {'link_text': 'Email'});">Email</a>
                             </div>
                             <div class="flex space-x-4">
@@ -402,43 +445,64 @@
         </div>
     </footer>
 
-    <!-- Analytics Modal -->
-    <div id="analytics-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <!-- Payoneer Modal -->
+    <div id="payoneer-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-semibold">Documentary Analytics</h3>
-                <button id="close-analytics" class="text-charcoal hover:text-sunset-orange">
+                <h3 class="text-xl font-semibold">Generate Payment Link</h3>
+                <button onclick="document.getElementById('payoneer-modal').classList.add('hidden');" class="text-charcoal hover:text-sunset-orange">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <div class="space-y-4">
+                <p>Enter the amount you'd like to contribute and your email for the payment link:</p>
+                
                 <div>
-                    <p class="font-semibold">Total Views:</p>
-                    <p id="modal-views" class="text-sunset-orange text-xl">1,247</p>
+                    <label class="block text-sm font-medium mb-1">Amount (USD)</label>
+                    <input type="number" id="payment-amount" min="1" value="15" 
+                           class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
                 </div>
+                
                 <div>
-                    <p class="font-semibold">Average Watch Time:</p>
-                    <p id="watch-time" class="text-sunset-orange text-xl">12:34 minutes</p>
+                    <label class="block text-sm font-medium mb-1">Your Email</label>
+                    <input type="email" id="payer-email" placeholder="you@example.com"
+                           class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
                 </div>
-                <div>
-                    <p class="font-semibold">Recent Comments:</p>
-                    <div class="bg-off-white p-3 rounded mt-2 max-h-40 overflow-y-auto">
-                        <div class="border-b border-warm-grey pb-2 mb-2">
-                            <p class="text-sm">"Absolutely breathtaking cinematography!"</p>
-                            <p class="text-xs text-warm-grey">- Viewer from Kenya</p>
-                        </div>
-                        <div class="border-b border-warm-grey pb-2 mb-2">
-                            <p class="text-sm">"I never knew these insects had such complex behaviors."</p>
-                            <p class="text-xs text-warm-grey">- Student from Uganda</p>
-                        </div>
-                        <div>
-                            <p class="text-sm">"The way you capture their world is magical."</p>
-                            <p class="text-xs text-warm-grey">- Nature enthusiast</p>
-                        </div>
-                    </div>
+                
+                <button onclick="createPaymentLink()" 
+                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                    Generate Payment Link
+                </button>
+                
+                <p class="text-xs text-warm-grey text-center mt-4">
+                    A secure Payoneer payment link will be generated and sent to your email.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
                 </div>
+                <h3 class="text-xl font-semibold mb-2">Thank You for Your Support!</h3>
+                <p class="mb-4">Please send your payment receipt/screenshot to:</p>
+                <a href="mailto:binomugishacom@gmail.com" 
+                   class="inline-block bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-4 rounded-lg mb-4">
+                   📧 binomugishacom@gmail.com
+                </a>
+                <p class="text-sm text-warm-grey mb-4">This helps us track your contribution and add you to our supporters list.</p>
+                <button onclick="document.getElementById('confirmation-modal').classList.add('hidden');" 
+                        class="text-sm text-sunset-orange hover:text-earth-brown">
+                    Close
+                </button>
             </div>
         </div>
     </div>
@@ -600,20 +664,8 @@
 
             // Enhanced video tracking
             const video = document.getElementById('documentary-video');
-            const viewCountElement = document.getElementById('view-count');
-            const modalViewsElement = document.getElementById('modal-views');
-            let viewCount = parseInt(viewCountElement.textContent.replace(',', ''));
-            let hasCountedView = false;
-
             if (video) {
                 video.addEventListener('play', function() {
-                    if (!hasCountedView) {
-                        viewCount++;
-                        viewCountElement.textContent = viewCount.toLocaleString();
-                        modalViewsElement.textContent = viewCount.toLocaleString();
-                        hasCountedView = true;
-                    }
-                    
                     gtag('event', 'video_play', {
                         'video_title': 'The Fascinating World of Dragonflies, Beetles, and Millipedes',
                         'video_duration': Math.round(video.duration),
@@ -708,20 +760,6 @@
             });
         });
 
-        // Modal functionality
-        const analyticsBtn = document.getElementById('analytics-btn');
-        const analyticsModal = document.getElementById('analytics-modal');
-        const closeAnalytics = document.getElementById('close-analytics');
-
-        analyticsBtn.addEventListener('click', function() {
-            analyticsModal.classList.remove('hidden');
-            gtag('event', 'analytics_view', {});
-        });
-
-        closeAnalytics.addEventListener('click', function() {
-            analyticsModal.classList.add('hidden');
-        });
-
         // Terms modal
         const termsBtn = document.getElementById('terms-btn');
         const termsModal = document.getElementById('terms-modal');
@@ -796,9 +834,6 @@
 
         // Close modals when clicking outside
         window.addEventListener('click', function(e) {
-            if (e.target === analyticsModal) {
-                analyticsModal.classList.add('hidden');
-            }
             if (e.target === termsModal) {
                 termsModal.classList.add('hidden');
             }
@@ -812,7 +847,84 @@
                     modal.classList.add('hidden');
                 }
             });
+
+            // Close Payoneer modal
+            if (e.target === document.getElementById('payoneer-modal')) {
+                document.getElementById('payoneer-modal').classList.add('hidden');
+            }
+
+            // Close confirmation modal
+            if (e.target === document.getElementById('confirmation-modal')) {
+                document.getElementById('confirmation-modal').classList.add('hidden');
+            }
         });
+
+        // Payoneer payment link generator
+        function generatePayoneerLink() {
+            gtag('event', 'payoneer_click', {});
+            document.getElementById('payoneer-modal').classList.remove('hidden');
+        }
+
+        function createPaymentLink() {
+            const amount = document.getElementById('payment-amount').value;
+            const email = document.getElementById('payer-email').value;
+            
+            if (!email || !amount || amount < 1) {
+                alert('Please enter a valid amount and email address');
+                return;
+            }
+            
+            gtag('event', 'payment_link_generated', {
+                'amount': amount,
+                'currency': 'USD'
+            });
+            
+            // For now, show a message. You'll need to implement the backend to generate Payoneer links
+            alert(`Payment link generation for $${amount} will be sent to ${email}\n\nNote: You need to set up Payoneer's Request Payment API on your backend to generate actual links.`);
+            
+            // Close modal
+            document.getElementById('payoneer-modal').classList.add('hidden');
+            
+            // Clear inputs
+            document.getElementById('payment-amount').value = '15';
+            document.getElementById('payer-email').value = '';
+        }
+
+        // Request bank details via email
+        function requestBankDetails() {
+            gtag('event', 'bank_details_request', {});
+            const email = prompt("Please enter your email to receive secure bank details:");
+            if (email && email.includes('@')) {
+                // Here you would typically send an email via your backend
+                // For now, show a confirmation
+                alert(`Bank details will be sent to ${email} within 24 hours.`);
+                
+                // You could also automatically open email client
+                window.location.href = `mailto:binomugishacom@gmail.com?subject=Bank%20Details%20Request&body=Hello,%20please%20send%20me%20your%20bank%20details%20for%20the%20documentary%20project.`;
+            } else if (email) {
+                alert("Please enter a valid email address.");
+            }
+        }
+
+        // Track payment method selection
+        document.querySelectorAll('[onclick*="donation_intent"]').forEach(button => {
+            const originalOnClick = button.getAttribute('onclick');
+            button.setAttribute('onclick', originalOnClick + '; trackPaymentMethod(this);');
+        });
+
+        function trackPaymentMethod(element) {
+            const text = element.textContent.toLowerCase();
+            let method = 'other';
+            
+            if (text.includes('mobile')) method = 'mobile_money';
+            else if (text.includes('bank')) method = 'bank_transfer';
+            else if (text.includes('payoneer') || text.includes('link')) method = 'payoneer';
+            
+            gtag('event', 'payment_method_selected', {
+                'method': method,
+                'button_text': element.textContent.trim()
+            });
+        }
 
         // Simple progress update (in a real implementation, this would come from your backend)
         function updateProgress() {
