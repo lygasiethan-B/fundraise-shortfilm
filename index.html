@@ -94,6 +94,19 @@
         .gradient-overlay {
             background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
         }
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #E25822;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body class="bg-off-white text-charcoal font-montserrat">
@@ -233,7 +246,7 @@
                     </div>
                 </div>
                 
-                <!-- Option 2: Mobile Money (UGANDA) - Updated without QR -->
+                <!-- Option 2: Mobile Money (UGANDA) -->
                 <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
                     <div class="mb-6">
                         <span class="inline-block bg-savanna-green text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">For Uganda</span>
@@ -241,7 +254,7 @@
                         <p class="mb-4">Request Mobile Money details via email for secure transfers within Uganda.</p>
                         
                         <div class="text-center">
-                            <button onclick="requestMobileMoneyDetails()" 
+                            <button onclick="showMobileMoneyModal()" 
                                     class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
                                 Email Me Mobile Money Details
                             </button>
@@ -263,7 +276,7 @@
                         <p class="mb-4">For secure international bank transfers, request details via email.</p>
                         
                         <div class="text-center">
-                            <button onclick="requestBankDetails()" 
+                            <button onclick="showBankTransferModal()" 
                                     class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
                                 Email Me Bank Details
                             </button>
@@ -498,12 +511,79 @@
                 </div>
                 
                 <button onclick="createPaymentLink()" 
-                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-                    Request Payment Link
+                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                    <span id="payoneer-submit-text">Request Payment Link</span>
+                    <div id="payoneer-submit-loader" class="loader hidden ml-2"></div>
                 </button>
                 
                 <p class="text-xs text-warm-grey text-center mt-4">
                     We'll generate a Payoneer payment link and email it to you within 24 hours.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Money Modal -->
+    <div id="mobile-money-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold">Mobile Money Details</h3>
+                <button onclick="document.getElementById('mobile-money-modal').classList.add('hidden');" class="text-charcoal hover:text-sunset-orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <p>Enter your email to receive Mobile Money details for secure transfers within Uganda.</p>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-1">Your Email</label>
+                    <input type="email" id="mobile-money-email" placeholder="you@example.com"
+                           class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
+                </div>
+                
+                <button onclick="requestMobileMoneyDetails()" 
+                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                    <span id="mobile-money-submit-text">Request Mobile Money Details</span>
+                    <div id="mobile-money-submit-loader" class="loader hidden ml-2"></div>
+                </button>
+                
+                <p class="text-xs text-warm-grey text-center mt-4">
+                    We'll email you the Mobile Money phone number and name within 24 hours.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bank Transfer Modal -->
+    <div id="bank-transfer-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold">Bank Transfer Details</h3>
+                <button onclick="document.getElementById('bank-transfer-modal').classList.add('hidden');" class="text-charcoal hover:text-sunset-orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <p>Enter your email to receive secure bank transfer details for international transfers.</p>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-1">Your Email</label>
+                    <input type="email" id="bank-transfer-email" placeholder="you@example.com"
+                           class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
+                </div>
+                
+                <button onclick="requestBankDetails()" 
+                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                    <span id="bank-transfer-submit-text">Request Bank Details</span>
+                    <div id="bank-transfer-submit-loader" class="loader hidden ml-2"></div>
+                </button>
+                
+                <p class="text-xs text-warm-grey text-center mt-4">
+                    We'll email you full bank account details for international transfers within 24 hours.
                 </p>
             </div>
         </div>
@@ -676,6 +756,9 @@
 
     <!-- JavaScript -->
     <script>
+        // Web3Forms Configuration
+        const WEB3FORMS_ACCESS_KEY = '9ce26fff-f98c-4fa2-9f2a-7bb1a3cfb231';
+
         // Enhanced event tracking
         document.addEventListener('DOMContentLoaded', function() {
             // Support button clicks tracking
@@ -886,21 +969,31 @@
                 }
             });
 
-            // Close Payoneer modal
-            if (e.target === document.getElementById('payoneer-modal')) {
-                document.getElementById('payoneer-modal').classList.add('hidden');
-            }
-
-            // Close confirmation modal
-            if (e.target === document.getElementById('confirmation-modal')) {
-                document.getElementById('confirmation-modal').classList.add('hidden');
-            }
+            // Close modals when clicking outside
+            ['payoneer-modal', 'mobile-money-modal', 'bank-transfer-modal', 'confirmation-modal'].forEach(modalId => {
+                const modal = document.getElementById(modalId);
+                if (modal && e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
         });
 
         // Payoneer payment link generator
         function generatePayoneerLink() {
             gtag('event', 'payoneer_click', {});
             document.getElementById('payoneer-modal').classList.remove('hidden');
+        }
+
+        // Mobile Money modal
+        function showMobileMoneyModal() {
+            gtag('event', 'mobile_money_modal_open', {});
+            document.getElementById('mobile-money-modal').classList.remove('hidden');
+        }
+
+        // Bank Transfer modal
+        function showBankTransferModal() {
+            gtag('event', 'bank_transfer_modal_open', {});
+            document.getElementById('bank-transfer-modal').classList.remove('hidden');
         }
 
         function createPaymentLink() {
@@ -912,58 +1005,382 @@
                 return;
             }
             
-            gtag('event', 'payment_link_generated', {
-                'amount': amount,
-                'currency': 'USD'
-            });
+            // Show loading state
+            const submitText = document.getElementById('payoneer-submit-text');
+            const submitLoader = document.getElementById('payoneer-submit-loader');
             
-            // Show confirmation message
-            alert(`Thank you! We'll generate a Payoneer payment link for $${amount} and send it to ${email} within 24 hours.\n\nPlease check your email for the secure payment link.`);
+            submitText.textContent = 'Processing...';
+            submitLoader.classList.remove('hidden');
             
-            // Track the request
-            gtag('event', 'payment_link_requested', {
-                'email_provided': email ? 'yes' : 'no',
-                'amount_requested': amount
-            });
+            // Send data to Web3Forms
+            const formData = new FormData();
+            formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+            formData.append('subject', `💳 Payoneer Payment Link Request - $${amount} USD`);
+            formData.append('from_name', 'Documentary Supporter');
+            formData.append('email', email);
+            formData.append('amount', `${amount} USD`);
+            formData.append('message', `New payment link request received:
             
-            // Close modal
-            document.getElementById('payoneer-modal').classList.add('hidden');
-            
-            // Clear inputs
-            document.getElementById('payment-amount').value = '15';
-            document.getElementById('payer-email').value = '';
-        }
+💰 Amount: $${amount} USD
+📧 Supporter Email: ${email}
+📅 Date: ${new Date().toLocaleString()}
+🌍 Location: ${window.location.href}
 
-        // Request bank details via email
-        function requestBankDetails() {
-            gtag('event', 'bank_details_request', {});
-            const email = prompt("Please enter your email to receive secure bank details for international transfer:");
-            if (email && email.includes('@')) {
-                alert(`Thank you! We'll email you the bank transfer details to ${email} within 24 hours.`);
+ACTION REQUIRED:
+1. Generate Payoneer payment link for $${amount}
+2. Send payment link to: ${email}
+3. Add ${email} to supporters list
+
+---`);
+            
+            // Send to Web3Forms
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Send auto-reply to supporter
+                    const autoReplyFormData = new FormData();
+                    autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
+                    autoReplyFormData.append('subject', 'Thank You for Your Support!');
+                    autoReplyFormData.append('from_name', 'Nathan Binomugisha');
+                    autoReplyFormData.append('email', email);
+                    autoReplyFormData.append('message', `Dear Supporter,
+
+Thank you for requesting a payment link to support "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut"!
+
+We've received your request for a $${amount} USD payment link.
+
+✅ **Next Steps:**
+1. We'll generate a secure Payoneer payment link
+2. We'll email it to you within 24 hours
+3. You'll receive a receipt upon payment
+
+Once you make the payment, please forward your receipt to lyenkynathan@gmail.com so we can add you to our supporters list and keep you updated on the project's progress.
+
+Your support means the world to me and helps bring this important story to life.
+
+With gratitude,
+Nathan Binomugisha
+Documentary Filmmaker
+
+---
+Project: A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut
+Website: https://series.binomugisha.org`);
+                    
+                    return fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: autoReplyFormData
+                    });
+                } else {
+                    throw new Error('Failed to send request');
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    gtag('event', 'payment_link_requested', {
+                        'amount': amount,
+                        'currency': 'USD',
+                        'email_provided': 'yes'
+                    });
+                    
+                    alert(`✅ Thank you, ${email}!\n\nWe've received your request for a $${amount} payment link.\n\n📧 Check your email for confirmation.\n\nWe'll send you the Payoneer payment link within 24 hours.`);
+                    
+                    // Close modal
+                    document.getElementById('payoneer-modal').classList.add('hidden');
+                    
+                    // Reset form
+                    document.getElementById('payment-amount').value = '15';
+                    document.getElementById('payer-email').value = '';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
                 
-                // Track the request
-                gtag('event', 'bank_details_email_provided', {
-                    'email_provided': 'yes'
+                // Fallback email method
+                const emailSubject = `Payoneer Payment Link Request - $${amount} USD`;
+                const emailBody = `Hi Nathan,
+
+I'd like to support your documentary with $${amount} USD.
+
+Please send me the Payoneer payment link.
+
+My email: ${email}
+
+Thank you!`;
+                
+                const mailtoLink = `mailto:binomugishacom@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+                
+                alert(`There was a temporary issue with our system.\n\nWe've prepared an email for you. Please send it to receive your payment link.\n\nAmount: $${amount}\nYour email: ${email}`);
+                
+                window.open(mailtoLink, '_blank');
+                
+                // Track fallback usage
+                gtag('event', 'payment_link_fallback', {
+                    'amount': amount,
+                    'fallback_reason': 'web3forms_error'
                 });
-            } else if (email) {
-                alert("Please enter a valid email address.");
-            }
+            })
+            .finally(() => {
+                // Reset button state
+                submitText.textContent = 'Request Payment Link';
+                submitLoader.classList.add('hidden');
+            });
         }
 
-        // Request mobile money details via email
+        // Request Mobile Money details
         function requestMobileMoneyDetails() {
-            gtag('event', 'mobile_money_details_request', {});
-            const email = prompt("Please enter your email to receive Mobile Money details for Uganda transactions:");
-            if (email && email.includes('@')) {
-                alert(`Thank you! We'll email you the Mobile Money details to ${email} within 24 hours.`);
-                
-                // Track the request
-                gtag('event', 'mobile_money_email_provided', {
-                    'email_provided': 'yes'
-                });
-            } else if (email) {
-                alert("Please enter a valid email address.");
+            const email = document.getElementById('mobile-money-email').value;
+            
+            if (!email || !email.includes('@')) {
+                alert('Please enter a valid email address');
+                return;
             }
+            
+            // Show loading state
+            const submitText = document.getElementById('mobile-money-submit-text');
+            const submitLoader = document.getElementById('mobile-money-submit-loader');
+            
+            submitText.textContent = 'Processing...';
+            submitLoader.classList.remove('hidden');
+            
+            gtag('event', 'mobile_money_details_request', {});
+            
+            // Send to Web3Forms
+            const formData = new FormData();
+            formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+            formData.append('subject', '📱 Mobile Money Details Request');
+            formData.append('from_name', 'Documentary Supporter');
+            formData.append('email', email);
+            formData.append('message', `New Mobile Money details request received:
+            
+📧 Supporter Email: ${email}
+📱 Requested: Uganda Mobile Money Details
+📅 Date: ${new Date().toLocaleString()}
+🌍 Location: ${window.location.href}
+
+ACTION REQUIRED:
+1. Send Mobile Money details to: ${email}
+2. Include: Phone number, name, and network (MTN/Airtel)
+3. Add ${email} to mobile money inquiries list
+
+---`);
+            
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Send auto-reply
+                    const autoReplyFormData = new FormData();
+                    autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
+                    autoReplyFormData.append('subject', 'Mobile Money Details Request Received');
+                    autoReplyFormData.append('from_name', 'Nathan Binomugisha');
+                    autoReplyFormData.append('email', email);
+                    autoReplyFormData.append('message', `Dear Supporter,
+
+Thank you for requesting Mobile Money details to support "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut"!
+
+We've received your request for Mobile Money payment details.
+
+✅ **Next Steps:**
+1. We'll email you our Mobile Money details within 24 hours
+2. You'll receive phone number, name, and network information
+3. You can then make your transfer via Mobile Money
+
+Once you make the payment, please forward your receipt to lyenkynathan@gmail.com so we can add you to our supporters list and keep you updated on the project's progress.
+
+Thank you for supporting Ugandan storytelling!
+
+With gratitude,
+Nathan Binomugisha
+Documentary Filmmaker
+
+---
+Project: A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut
+Website: https://series.binomugisha.org`);
+                    
+                    return fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: autoReplyFormData
+                    });
+                } else {
+                    throw new Error('Failed to send request');
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(`✅ Thank you, ${email}!\n\nWe've received your request for Mobile Money details.\n\n📧 Check your email for confirmation.\n\nWe'll send you the Mobile Money details within 24 hours.`);
+                    
+                    gtag('event', 'mobile_money_email_provided', {
+                        'email_provided': 'yes'
+                    });
+                    
+                    // Close modal
+                    document.getElementById('mobile-money-modal').classList.add('hidden');
+                    
+                    // Reset form
+                    document.getElementById('mobile-money-email').value = '';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                
+                // Fallback
+                const emailSubject = 'Mobile Money Details Request';
+                const emailBody = `Hi Nathan,
+
+I'd like to support your documentary via Mobile Money.
+
+Please send me your Mobile Money details (phone number, name, network).
+
+My email: ${email}
+
+Thank you!`;
+                
+                const mailtoLink = `mailto:binomugishacom@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+                
+                alert(`There was a temporary issue. We've prepared an email for you. Please send it to receive Mobile Money details.\n\nYour email: ${email}`);
+                
+                window.open(mailtoLink, '_blank');
+            })
+            .finally(() => {
+                // Reset button state
+                submitText.textContent = 'Request Mobile Money Details';
+                submitLoader.classList.add('hidden');
+            });
+        }
+
+        // Request Bank Transfer details
+        function requestBankDetails() {
+            const email = document.getElementById('bank-transfer-email').value;
+            
+            if (!email || !email.includes('@')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            // Show loading state
+            const submitText = document.getElementById('bank-transfer-submit-text');
+            const submitLoader = document.getElementById('bank-transfer-submit-loader');
+            
+            submitText.textContent = 'Processing...';
+            submitLoader.classList.remove('hidden');
+            
+            gtag('event', 'bank_details_request', {});
+            
+            // Send to Web3Forms
+            const formData = new FormData();
+            formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+            formData.append('subject', '🏦 Bank Transfer Details Request');
+            formData.append('from_name', 'Documentary Supporter');
+            formData.append('email', email);
+            formData.append('message', `New bank transfer details request received:
+            
+📧 Supporter Email: ${email}
+💼 Requested: International Bank Transfer Details
+📅 Date: ${new Date().toLocaleString()}
+🌍 Location: ${window.location.href}
+
+ACTION REQUIRED:
+1. Send bank transfer details to: ${email}
+2. Include: Bank name, account number, SWIFT/BIC, routing details
+3. Add ${email} to banking inquiries list
+
+---`);
+            
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Send auto-reply
+                    const autoReplyFormData = new FormData();
+                    autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
+                    autoReplyFormData.append('subject', 'Bank Transfer Details Request Received');
+                    autoReplyFormData.append('from_name', 'Nathan Binomugisha');
+                    autoReplyFormData.append('email', email);
+                    autoReplyFormData.append('message', `Dear Supporter,
+
+Thank you for requesting bank transfer details to support "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut"!
+
+We've received your request for international bank transfer details.
+
+✅ **Next Steps:**
+1. We'll email you our bank account details within 24 hours
+2. You'll receive full banking information for international transfers
+3. You can then make your bank transfer
+
+Once you make the payment, please forward your receipt to lyenkynathan@gmail.com so we can add you to our supporters list and keep you updated on the project's progress.
+
+Thank you for supporting this important documentary!
+
+With gratitude,
+Nathan Binomugisha
+Documentary Filmmaker
+
+---
+Project: A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut
+Website: https://series.binomugisha.org`);
+                    
+                    return fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: autoReplyFormData
+                    });
+                } else {
+                    throw new Error('Failed to send request');
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(`✅ Thank you, ${email}!\n\nWe've received your request for bank transfer details.\n\n📧 Check your email for confirmation.\n\nWe'll send you the bank details within 24 hours.`);
+                    
+                    gtag('event', 'bank_details_email_provided', {
+                        'email_provided': 'yes'
+                    });
+                    
+                    // Close modal
+                    document.getElementById('bank-transfer-modal').classList.add('hidden');
+                    
+                    // Reset form
+                    document.getElementById('bank-transfer-email').value = '';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                
+                // Fallback
+                const emailSubject = 'Bank Transfer Details Request';
+                const emailBody = `Hi Nathan,
+
+I'd like to support your documentary via international bank transfer.
+
+Please send me your bank account details.
+
+My email: ${email}
+
+Thank you!`;
+                
+                const mailtoLink = `mailto:binomugishacom@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+                
+                alert(`There was a temporary issue. We've prepared an email for you. Please send it to receive bank transfer details.\n\nYour email: ${email}`);
+                
+                window.open(mailtoLink, '_blank');
+            })
+            .finally(() => {
+                // Reset button state
+                submitText.textContent = 'Request Bank Details';
+                submitLoader.classList.add('hidden');
+            });
         }
 
         // Track payment method selection
