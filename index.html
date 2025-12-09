@@ -261,7 +261,7 @@
                         </div>
                     </div>
                     <div class="mt-auto">
-                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'mtn_mobile_money', 'amount': 15.00}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
+                        <button onclick="gtag('event', 'purchase', {'currency': 'USD', 'value': 15.00, 'payment_method': 'Mobile_Money_Confirmed'}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
                                 class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
                             I've Sent Mobile Money
                         </button>
@@ -283,7 +283,7 @@
                         </div>
                     </div>
                     <div class="mt-auto">
-                        <button onclick="gtag('event', 'conversion', {'send_to': 'G-8PGW26EBE2', 'value': 15.00, 'currency': 'USD', 'transaction_id': ''}); gtag('event', 'donation_intent', {'payment_method': 'bank_transfer', 'amount': 15.00}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
+                        <button onclick="gtag('event', 'purchase', {'currency': 'USD', 'value': 50.00, 'payment_method': 'Bank_Transfer_Confirmed'}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
                                 class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
                             I've Made Bank Transfer
                         </button>
@@ -980,19 +980,19 @@
 
         // Payoneer payment link generator
         function generatePayoneerLink() {
-            gtag('event', 'payoneer_click', {});
+            gtag('event', 'begin_checkout', {'payment_method': 'Payoneer'});
             document.getElementById('payoneer-modal').classList.remove('hidden');
         }
 
         // Mobile Money modal
         function showMobileMoneyModal() {
-            gtag('event', 'mobile_money_modal_open', {});
+            gtag('event', 'begin_checkout', {'payment_method': 'Mobile_Money'});
             document.getElementById('mobile-money-modal').classList.remove('hidden');
         }
 
         // Bank Transfer modal
         function showBankTransferModal() {
-            gtag('event', 'bank_transfer_modal_open', {});
+            gtag('event', 'begin_checkout', {'payment_method': 'Bank_Transfer'});
             document.getElementById('bank-transfer-modal').classList.remove('hidden');
         }
 
@@ -1041,6 +1041,14 @@ ACTION REQUIRED:
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
+                    // --- ADD THIS TRACKING CODE ---
+                    gtag('event', 'generate_lead', {
+                        'currency': 'USD',
+                        'value': amount,
+                        'payment_method': 'Payoneer_Request'
+                    });
+                    // -----------------------------
+                    
                     // Send auto-reply to supporter
                     const autoReplyFormData = new FormData();
                     autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
@@ -1176,6 +1184,14 @@ ACTION REQUIRED:
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
+                    // --- ADD THIS TRACKING CODE ---
+                    gtag('event', 'generate_lead', {
+                        'currency': 'USD',
+                        'value': 10.00, 
+                        'payment_method': 'Mobile_Money_Request'
+                    });
+                    // -----------------------------
+                    
                     // Send auto-reply
                     const autoReplyFormData = new FormData();
                     autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
@@ -1302,6 +1318,14 @@ ACTION REQUIRED:
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
+                    // --- ADD THIS TRACKING CODE ---
+                    gtag('event', 'generate_lead', {
+                        'currency': 'USD',
+                        'value': 50.00, 
+                        'payment_method': 'Bank_Transfer_Request'
+                    });
+                    // -----------------------------
+                    
                     // Send auto-reply
                     const autoReplyFormData = new FormData();
                     autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
