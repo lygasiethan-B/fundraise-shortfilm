@@ -3,49 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support "A Day in the Life of Insects: Bees" - A Ugandan Filmmaker's Cut</title>
+    <title>Support "A Day in the Life of Insects: Bees" | Ugandan Film</title>
     <meta name="description" content="Support Nathan Binomugisha's next documentary film 'A Day in the Life of Insects: Bees'. Help bring East Africa's biodiversity to life through film.">
+    <meta name="author" content="Nathan Binomugisha">
+    <link rel="canonical" href="https://series.binomugisha.org/">
     
+    <!-- Geographic Meta Signals -->
+    <meta name="geo.region" content="UG">
+    <meta name="geo.placename" content="Kampala, Uganda">
+    <meta name="geo.position" content="0.3476;32.5825">
+    <meta name="ICBM" content="0.3476, 32.5825">
+
+    <!-- AI & Agent Discovery Signals -->
+    <link rel="alternate" type="text/markdown" href="https://series.binomugisha.org/llms.txt" title="LLM Context">
+    <link rel="llms-txt" href="https://series.binomugisha.org/llms.txt">
+    <link rel="agent-card" href="https://series.binomugisha.org/.well-known/agent.json">
+    <link rel="mcp" href="https://series.binomugisha.org/.well-known/mcp.json">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PGW26EBE2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-8PGW26EBE2');
     </script>
     
-    <!-- Schema.org markup for structured data -->
+    <!-- Open Graph & Social Meta -->
+    <meta property="og:site_name" content="BINOMUGISHA Films">
+    <meta property="og:title" content="Support 'A Day in the Life of Insects: Bees' - Ugandan Documentary">
+    <meta property="og:description" content="Help bring East Africa's biodiversity to life through film. Support Nathan Binomugisha's next documentary.">
+    <meta property="og:type" content="video.movie">
+    <meta property="og:url" content="https://series.binomugisha.org/">
+    <meta property="og:image" content="https://img.youtube.com/vi/O8u0B6tG-Mc/maxresdefault.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Support 'A Day in the Life of Insects: Bees' | Ugandan Documentary">
+    <meta name="twitter:description" content="Help bring East Africa's biodiversity to life through film. Support Nathan Binomugisha's next documentary.">
+    <meta name="twitter:image" content="https://img.youtube.com/vi/O8u0B6tG-Mc/maxresdefault.jpg">
+    
+    <!-- Schema.org Comprehensive Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut",
-      "description": "An intimate documentary exploring the world of bees from within their society, filmed by Ugandan filmmaker Nathan Binomugisha.",
-      "funder": {
-        "@type": "Person",
-        "name": "Nathan Binomugisha"
-      },
-      "locationCreated": {
-        "@type": "Place",
-        "name": "Uganda, East Africa"
-      },
-      "genre": "Documentary",
-      "creator": {
-        "@type": "Person",
-        "name": "Nathan Binomugisha",
-        "url": "https://binomugisha.org"
-      }
+      "@graph": [
+        {
+          "@type": "Movie",
+          "@id": "https://series.binomugisha.org/#movie",
+          "name": "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut",
+          "description": "An intimate wildlife documentary exploring the world of bees from within their society, filmed in Uganda by independent filmmaker Nathan Binomugisha.",
+          "genre": "Documentary",
+          "dateCreated": "2025-12-01",
+          "dateModified": "2026-09-21",
+          "inLanguage": "en",
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "Uganda"
+          },
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": "Uganda, East Africa",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 0.3476,
+              "longitude": 32.5825
+            }
+          },
+          "director": {
+            "@id": "https://series.binomugisha.org/#person"
+          },
+          "creator": {
+            "@id": "https://series.binomugisha.org/#person"
+          },
+          "producer": {
+            "@id": "https://series.binomugisha.org/#person"
+          },
+          "funder": {
+            "@id": "https://series.binomugisha.org/#organization"
+          },
+          "potentialAction": {
+            "@type": "DonateAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://series.binomugisha.org/#support",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            },
+            "recipient": {
+              "@id": "https://series.binomugisha.org/#organization"
+            },
+            "description": "Support the production of the documentary film"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Sarah K."
+              },
+              "reviewBody": "His films are a must watch. The attention to detail and the way he captures the essence of these tiny creatures is remarkable.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              }
+            },
+            {
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "David M."
+              },
+              "reviewBody": "You have an art for film, it's what sets you apart. The storytelling combined with stunning visuals creates an immersive experience.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://series.binomugisha.org/#person",
+          "name": "Nathan Binomugisha",
+          "jobTitle": "Independent Wildlife & Documentary Filmmaker",
+          "description": "Ugandan filmmaker documenting East Africa's biodiversity and insects through intimate cinematography.",
+          "url": "https://binomugisha.org",
+          "sameAs": [
+            "https://www.youtube.com/@binomugishan",
+            "https://www.instagram.com/binomugisha_org/",
+            "https://www.linkedin.com/in/binomugisha/",
+            "https://linktr.ee/BINOMUGISHAN",
+            "https://video.binomugisha.org",
+            "https://media.binomugisha.org"
+          ],
+          "knowsAbout": [
+            "Wildlife Cinematography",
+            "Documentary Filmmaking",
+            "Insect Biodiversity",
+            "East African Ecology",
+            "Conservation Media"
+          ],
+          "nationality": {
+            "@type": "Country",
+            "name": "Uganda"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kampala",
+            "addressCountry": "UG"
+          },
+          "worksFor": {
+            "@id": "https://series.binomugisha.org/#organization"
+          }
+        },
+        {
+          "@type": ["LocalBusiness", "Organization"],
+          "@id": "https://series.binomugisha.org/#organization",
+          "name": "BINOMUGISHA Films",
+          "url": "https://series.binomugisha.org/",
+          "logo": "https://img.youtube.com/vi/O8u0B6tG-Mc/maxresdefault.jpg",
+          "image": "https://img.youtube.com/vi/O8u0B6tG-Mc/maxresdefault.jpg",
+          "founder": {
+            "@id": "https://series.binomugisha.org/#person"
+          },
+          "email": "services@binomugisha.org",
+          "telephone": "+256705377130",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kampala",
+            "addressRegion": "Central",
+            "addressCountry": "UG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 0.3476,
+            "longitude": 32.5825
+          },
+          "areaServed": [
+            "Uganda",
+            "East Africa",
+            "Worldwide"
+          ],
+          "sameAs": [
+            "https://binomugisha.org",
+            "https://wa.me/256705377130",
+            "https://www.youtube.com/@binomugishan",
+            "https://www.instagram.com/binomugisha_org/"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://series.binomugisha.org/#faq-schema",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is this campaign about?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This campaign is funding the production of 'A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut' — an intimate wildlife documentary that explores the world of bees from within their society, filmed in Uganda by independent filmmaker Nathan Binomugisha."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can support online via Payoneer, locally via Uganda Mobile Money (MTN/Airtel), internationally via Bank Transfer, or by chatting directly on WhatsApp. Click 'Get Payment Link', 'Get Mobile Money Details', or 'Get Bank Details' on the support section to receive secure payment instructions within 24 hours."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When will the film be released?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The production timeline runs through 2026, with post-production scheduled for completion by March 2027. Backers receive private early viewing access before public film festival screenings and distribution."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How will my contribution be used?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your contribution directly funds specialized macro camera equipment, field production expenses across Uganda, post-production editing, custom music scoring, and international festival distribution."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://series.binomugisha.org/#howto-support",
+          "name": "How to Support the Documentary Film Project",
+          "description": "Step-by-step instructions to contribute to 'A Day in the Life of Insects: Bees'.",
+          "totalTime": "PT5M",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Request Payment Details",
+              "text": "Choose Payoneer, Mobile Money, Bank Transfer, or WhatsApp and submit your details."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Receive Custom Payment Information",
+              "text": "Receive your secure Payoneer link, Mobile Money phone number, or SWIFT bank details by email/WhatsApp within 24 hours."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Complete the Payment",
+              "text": "Transfer your contribution using the provided details."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Send Confirmation",
+              "text": "Forward your payment receipt to services@binomugisha.org or WhatsApp (+256 705 377 130) to receive project updates and film credits."
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://series.binomugisha.org/#service",
+          "name": "Wildlife & Documentary Cinematography",
+          "serviceType": "Film Production",
+          "provider": {
+            "@id": "https://series.binomugisha.org/#organization"
+          },
+          "areaServed": "Worldwide",
+          "description": "Professional wildlife cinematography and nature documentary production focusing on African biodiversity and macro ecology."
+        }
+      ]
     }
     </script>
-    
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Support 'A Day in the Life of Insects: Bees' - Ugandan Documentary">
-    <meta property="og:description" content="Help bring East Africa's biodiversity to life through film. Support Nathan Binomugisha's next documentary.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://series.binomugisha.org">
-    <!-- Add og:image when you have a campaign image -->
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -92,20 +323,26 @@
             z-index: -1;
         }
         .gradient-overlay {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.88) 100%);
         }
         .loader {
             border: 3px solid #f3f3f3;
             border-top: 3px solid #E25822;
             border-radius: 50%;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             animation: spin 1s linear infinite;
-            margin: 0 auto;
+            display: inline-block;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] .faq-icon {
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -114,33 +351,113 @@
     <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-sunset-orange">BINOMUGISHA Films</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#about" class="hover:text-sunset-orange transition">About</a>
-                <a href="#showcase" class="hover:text-sunset-orange transition">Documentary</a>
-                <a href="#next-project" class="hover:text-sunset-orange transition">Next Project</a>
-                <a href="#support" class="hover:text-sunset-orange transition">Support</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-sunset-orange transition font-medium">About</a>
+                <a href="#showcase" class="hover:text-sunset-orange transition font-medium">Documentary</a>
+                <a href="#next-project" class="hover:text-sunset-orange transition font-medium">Next Project</a>
+                <a href="#faq" class="hover:text-sunset-orange transition font-medium">FAQ</a>
+                <a href="#support" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-5 rounded-lg transition duration-300">Support</a>
             </div>
-            <button class="md:hidden text-charcoal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-charcoal focus:outline-none p-2" aria-label="Toggle navigation menu">
+                <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
+                <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
             </button>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-3 shadow-lg">
+            <a href="#about" class="mobile-nav-link block py-2 text-charcoal hover:text-sunset-orange font-medium transition">About</a>
+            <a href="#showcase" class="mobile-nav-link block py-2 text-charcoal hover:text-sunset-orange font-medium transition">Documentary</a>
+            <a href="#next-project" class="mobile-nav-link block py-2 text-charcoal hover:text-sunset-orange font-medium transition">Next Project</a>
+            <a href="#faq" class="mobile-nav-link block py-2 text-charcoal hover:text-sunset-orange font-medium transition">FAQ</a>
+            <a href="#support" class="mobile-nav-link block text-center bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Support</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
-        <video class="hero-video" autoplay muted loop>
-            <source src="https://usc1.contabostorage.com/8593ef8d2b4a4502873a1044362667fb:videos/documentaries/Documentary%20l%20The%20Fascinating%20World%20of%20Dragonflies%2C%20Beetles%2C%20and%20Millipedes..mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="gradient-overlay absolute inset-0"></div>
-        <div class="container mx-auto px-4 text-center z-10">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">The Fascinating World of Dragonflies, Beetles, and Millipedes</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Help bring the next story — A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#showcase" class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-8 rounded-lg transition duration-300" onclick="gtag('event', 'watch_film_click', {'button_location': 'hero'});">Watch Film</a>
-                <a href="#support" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-semibold py-3 px-8 rounded-lg transition duration-300" onclick="gtag('event', 'support_button_click', {'button_location': 'hero', 'button_text': 'Support Next Film'});">Support Next Film</a>
+    <section class="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center text-white bg-gradient-to-br from-[#111317] via-[#181c22] to-[#0d0f12] pt-28 pb-16 overflow-hidden">
+        <!-- Subtle Ambient Lighting Accents -->
+        <div class="absolute top-1/4 -left-32 w-96 h-96 bg-sunset-orange/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 -right-32 w-96 h-96 bg-sunlight-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <!-- Left Column: Project Title & Fundraising Pitch -->
+                <div class="lg:col-span-7 text-left space-y-5">
+                    <div class="inline-flex items-center gap-2 bg-sunset-orange/20 border border-sunset-orange/50 text-sunlight-yellow text-xs font-semibold px-3.5 py-1.5 rounded-full tracking-wider uppercase backdrop-blur-sm shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-sunset-orange" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+                        </svg>
+                        <span>Independent Wildlife Cinema • Uganda</span>
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-[1.12] tracking-tight drop-shadow-md">
+                        A Day in the Life of Insects: <span class="text-sunset-orange">Bees</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-sunlight-yellow font-medium drop-shadow-sm">
+                        A Ugandan Filmmaker's Cut by Nathan Binomugisha
+                    </p>
+                    
+                    <p class="text-base sm:text-lg text-gray-300 leading-relaxed max-w-xl font-light">
+                        Join us in documenting the vital, hidden world of East African honeybee colonies. Through intimate macro cinematography, we capture hive navigation, caste hierarchy, and ecological pollination across Uganda.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 pt-3">
+                        <a href="#support" 
+                           class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3.5 px-8 rounded-xl transition duration-300 shadow-lg shadow-sunset-orange/30 inline-flex items-center gap-2"
+                           onclick="gtag('event', 'support_button_click', {'button_location': 'hero', 'button_text': 'Support This Film'});">
+                            <span>Support This Film</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                        <a href="#next-project" 
+                           class="bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold py-3.5 px-7 rounded-xl transition duration-300 backdrop-blur-sm inline-flex items-center gap-2"
+                           onclick="gtag('event', 'learn_more_click', {'button_location': 'hero'});">
+                            <span>Learn More</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Video Preview Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gray-900/90 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/15 shadow-2xl">
+                        <div class="flex items-center justify-between pb-3 border-b border-white/10 mb-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-gray-300">Previous Release</span>
+                            <span class="text-xs font-semibold text-sunlight-yellow bg-sunlight-yellow/15 border border-sunlight-yellow/30 px-2.5 py-0.5 rounded-full">12 min Documentary</span>
+                        </div>
+                        
+                        <div id="hero-video-container" class="relative aspect-video rounded-xl overflow-hidden group shadow-inner bg-black">
+                            <div id="hero-video-facade" class="absolute inset-0 w-full h-full cursor-pointer" onclick="playHeroDocumentaryVideo()">
+                                <img 
+                                    src="https://img.youtube.com/vi/O8u0B6tG-Mc/maxresdefault.jpg" 
+                                    alt="The Fascinating World of Dragonflies, Beetles, and Millipedes" 
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                >
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
+                                    <div class="w-16 h-16 sm:w-18 sm:h-18 bg-sunset-orange hover:bg-earth-brown text-white rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="hero-video-wrapper" class="w-full h-full hidden"></div>
+                        </div>
+                        
+                        <div class="pt-3">
+                            <h3 class="text-sm sm:text-base font-semibold text-white leading-snug">The Fascinating World of Dragonflies, Beetles, & Millipedes</h3>
+                            <p class="text-xs text-gray-400 mt-1">Watch our completed wildlife short film to see the cinematography quality we bring to East African nature stories.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -150,31 +467,59 @@
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-6">Capturing East Africa's Biodiversity Through Film</h2>
-                <p class="text-lg mb-8">I'm Nathan Binomugisha, an Independent documentary filmmaker documenting nature's smallest wonders with the biggest stories. Through intimate cinematography, I reveal the intricate worlds of insects and small creatures that often go unnoticed.</p>
-                <p class="text-lg">My work focuses on showcasing East Africa's rich biodiversity and connecting viewers with the delicate ecosystems that sustain our planet.</p>
+                <p class="text-lg mb-8">I'm Nathan Binomugisha, an independent documentary filmmaker documenting nature's smallest wonders with the biggest stories. Through intimate cinematography, I reveal the intricate worlds of insects and small creatures that often go unnoticed in East Africa.</p>
+                <p class="text-lg mb-8">My work focuses on showcasing East Africa's rich biodiversity and connecting viewers with the delicate ecosystems that sustain our planet.</p>
+            </div>
+
+            <!-- Definition & Concept Blocks for AI Answers -->
+            <div class="max-w-4xl mx-auto mt-8 grid md:grid-cols-2 gap-6">
+                <div class="bg-off-white p-6 rounded-lg border border-gray-100">
+                    <h3 class="text-xl font-semibold mb-3 text-sunset-orange">What is Entomological Cinematography?</h3>
+                    <p class="text-sm leading-relaxed text-charcoal">
+                        Entomological cinematography is specialized macro and micro wildlife filming focusing on insect behavior, colonial communication, pollination, and biomechanical adaptations at high magnification.
+                    </p>
+                </div>
+                <div class="bg-off-white p-6 rounded-lg border border-gray-100">
+                    <h3 class="text-xl font-semibold mb-3 text-sunset-orange">What is the Bee Society Project?</h3>
+                    <p class="text-sm leading-relaxed text-charcoal">
+                        "A Day in the Life of Insects: Bees" is a nature documentary exploring East African honeybee colonies from within the hive, illustrating caste labor, hive navigation, and ecological pollination.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Showcase Section -->
+    <!-- Showcase Section (YouTube Video) -->
     <section id="showcase" class="py-16 bg-off-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Documentary Showcase</h2>
             <div class="max-w-4xl mx-auto">
-                <div class="bg-black rounded-lg overflow-hidden shadow-lg">
-                    <video 
-                        id="documentary-video"
-                        class="w-full" 
-                        poster="https://usc1.contabostorage.com/8593ef8d2b4a4502873a1044362667fb:videos/documentaries/Documentary%20l%20The%20Fascinating%20World%20of%20Dragonflies%2C%20Beetles%2C%20and%20Millipedes%20thumbnail.jpg" 
-                        controls
-                    >
-                        <source src="https://usc1.contabostorage.com/8593ef8d2b4a4502873a1044362667fb:videos/documentaries/Documentary%20l%20The%20Fascinating%20World%20of%20Dragonflies%2C%20Beetles%2C%20and%20Millipedes..mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div id="video-container" class="bg-black rounded-lg overflow-hidden shadow-2xl relative aspect-video group">
+                    <div id="video-facade" class="absolute inset-0 w-full h-full cursor-pointer" onclick="playDocumentaryVideo()">
+                        <img 
+                            src="https://img.youtube.com/vi/O8u0B6tG-Mc/maxresdefault.jpg" 
+                            alt="The Fascinating World of Dragonflies, Beetles, and Millipedes" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-15 transition duration-300 flex items-center justify-center">
+                            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-sunset-orange hover:bg-earth-brown text-white rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-10 sm:w-10 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="video-player-wrapper" class="w-full h-full hidden"></div>
                 </div>
                 <div class="mt-6 text-center">
-                    <h3 class="text-2xl font-semibold mb-4">Documentary: The Fascinating World of Dragonflies, Beetles, and Millipedes</h3>
-                    <p class="text-lg mb-6">This documentary has raised awareness about Uganda's insect biodiversity, contributing to conservation efforts and environmental education across East Africa.</p>
+                    <h3 class="text-2xl font-semibold mb-3">Documentary: The Fascinating World of Dragonflies, Beetles, and Millipedes</h3>
+                    <p class="text-lg mb-4 text-warm-grey">This documentary has raised awareness about Uganda's insect biodiversity, contributing to conservation efforts and environmental education across East Africa.</p>
+                    <a href="https://youtu.be/O8u0B6tG-Mc?si=KE9wu3kDJYFhqdxg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sunset-orange hover:text-earth-brown font-semibold transition" onclick="gtag('event', 'youtube_watch_click', {'video_id': 'O8u0B6tG-Mc'});">
+                        <span>Watch on YouTube</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -225,21 +570,22 @@
     <section id="support" class="py-16 bg-off-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Support the Next Story</h2>
+            
             <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
                 
-                <!-- Option 1: Payoneer Payment Link -->
-                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
-                    <div class="mb-6">
+                <!-- Option 1: Pay Online -->
+                <div class="bg-white p-8 rounded-2xl shadow-md flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
                         <span class="inline-block bg-sunlight-yellow text-charcoal text-xs font-semibold px-3 py-1 rounded-full mb-4">Easiest & Fastest</span>
-                        <h3 class="text-xl font-semibold mb-4 text-sunset-orange">💳 Pay Online</h3>
-                        <p class="mb-4">Secure online payment via Payoneer. Enter your email and amount, and we'll send you a secure payment link.</p>
-                        <div class="bg-off-white p-4 rounded-lg mb-4">
-                            <p class="text-sm text-center font-medium">We generate and send you a custom payment link</p>
+                        <h3 class="text-xl font-semibold mb-3 text-sunset-orange">Pay Online</h3>
+                        <p class="text-sm text-charcoal mb-4">Secure credit/debit card or Payoneer payment. Enter your email and amount to receive a custom checkout link.</p>
+                        <div class="bg-off-white p-4 rounded-lg mb-6">
+                            <p class="text-xs text-center font-medium text-charcoal">Custom debit / credit / Payoneer checkout link</p>
                         </div>
                     </div>
-                    <div class="mt-auto">
+                    <div>
                         <button onclick="generatePayoneerLink()" 
-                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 mb-3">
+                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 mb-2 shadow-sm">
                             Get Payment Link
                         </button>
                         <p class="text-xs text-warm-grey text-center">Secure • Instant • Receipt Provided</p>
@@ -247,96 +593,132 @@
                 </div>
                 
                 <!-- Option 2: Mobile Money (UGANDA) -->
-                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
-                    <div class="mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-md flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
                         <span class="inline-block bg-savanna-green text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">For Uganda</span>
-                        <h3 class="text-xl font-semibold mb-4 text-sunset-orange">📱 Mobile Money</h3>
-                        <p class="mb-4">Request Mobile Money details via email for secure transfers within Uganda.</p>
-                        
-                        <div class="text-center">
-                            <button onclick="showMobileMoneyModal()" 
-                                    class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
-                                Email Me Mobile Money Details
-                            </button>
+                        <h3 class="text-xl font-semibold mb-3 text-sunset-orange">Mobile Money</h3>
+                        <p class="text-sm text-charcoal mb-4">Direct transfers via MTN or Airtel within Uganda. Enter your email to receive our registered merchant phone & name.</p>
+                        <div class="bg-off-white p-4 rounded-lg mb-6">
+                            <p class="text-xs text-center font-medium text-charcoal">Registered MTN & Airtel number, name & network</p>
                         </div>
                     </div>
-                    <div class="mt-auto">
+                    <div>
+                        <button onclick="showMobileMoneyModal()" 
+                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 mb-2 shadow-sm">
+                            Get Mobile Money Details
+                        </button>
                         <button onclick="gtag('event', 'purchase', {'currency': 'USD', 'value': 15.00, 'payment_method': 'Mobile_Money_Confirmed'}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
-                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-                            I've Sent Mobile Money
+                                class="text-xs text-savanna-green hover:underline text-center w-full block">
+                            Already sent? Confirm transfer →
                         </button>
                     </div>
                 </div>
                 
                 <!-- Option 3: Bank Transfer (INTERNATIONAL) -->
-                <div class="bg-white p-8 rounded-lg shadow-md flex flex-col">
-                    <div class="mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-md flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
                         <span class="inline-block bg-charcoal text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">International</span>
-                        <h3 class="text-xl font-semibold mb-4 text-sunset-orange">🏦 Bank Transfer</h3>
-                        <p class="mb-4">For secure international bank transfers, request details via email.</p>
-                        
-                        <div class="text-center">
-                            <button onclick="showBankTransferModal()" 
-                                    class="bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
-                                Email Me Bank Details
-                            </button>
+                        <h3 class="text-xl font-semibold mb-3 text-sunset-orange">Bank Transfer</h3>
+                        <p class="text-sm text-charcoal mb-4">Direct wire transfers from anywhere globally. Enter your email to receive our full SWIFT/BIC, IBAN, and bank routing details.</p>
+                        <div class="bg-off-white p-4 rounded-lg mb-6">
+                            <p class="text-xs text-center font-medium text-charcoal">Full international SWIFT / IBAN wire information</p>
                         </div>
                     </div>
-                    <div class="mt-auto">
+                    <div>
+                        <button onclick="showBankTransferModal()" 
+                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 mb-2 shadow-sm">
+                            Get Bank Details
+                        </button>
                         <button onclick="gtag('event', 'purchase', {'currency': 'USD', 'value': 50.00, 'payment_method': 'Bank_Transfer_Confirmed'}); document.getElementById('confirmation-modal').classList.remove('hidden');" 
-                                class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-                            I've Made Bank Transfer
+                                class="text-xs text-warm-grey hover:text-charcoal hover:underline text-center w-full block">
+                            Already transferred? Confirm wire →
                         </button>
                     </div>
                 </div>
             </div>
+
+            <!-- WhatsApp Direct Option Banner -->
+            <div class="max-w-4xl mx-auto mt-8 p-5 sm:p-6 bg-green-50 border border-green-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-center gap-4 text-center sm:text-left">
+                    <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-charcoal text-base">Prefer to connect or contribute via WhatsApp?</h4>
+                        <p class="text-xs sm:text-sm text-gray-700">Chat directly with filmmaker Nathan Binomugisha for instant support, mobile money, or custom payment options.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/256705377130?text=Hi%20Nathan,%20I'd%20like%20to%20support%20the%20documentary%20'A%20Day%20in%20the%20Life%20of%20Insects:%20Bees'" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center gap-2 flex-shrink-0 shadow-md"
+                   onclick="gtag('event', 'whatsapp_click', {'location': 'support_banner'});">
+                    <span>Chat on WhatsApp</span>
+                </a>
+            </div>
             
             <!-- Payment Process Explanation -->
-            <div class="max-w-2xl mx-auto mt-12 p-6 bg-white rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-4 text-center">How Our Payment Process Works</h3>
+            <div class="max-w-3xl mx-auto mt-12 p-6 sm:p-8 bg-white rounded-2xl shadow-md">
+                <h3 class="text-xl font-semibold mb-6 text-center text-charcoal">How Our Payment Process Works</h3>
                 <div class="space-y-4">
                     <div class="flex items-start">
-                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">1</div>
-                        <p><span class="font-semibold">Request Payment Details:</span> Click any "Email Me" button above and enter your email address.</p>
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">1</div>
+                        <p><span class="font-semibold text-charcoal">Request Payment Details:</span> Click any "Get Payment Link" or "Get Details" button above (or message us on WhatsApp) and share your email.</p>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">2</div>
-                        <p><span class="font-semibold">We Send You Details:</span> We'll email you the specific payment information within 24 hours:
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>For <strong>Payoneer</strong>: A secure payment link for your chosen amount</li>
-                                <li>For <strong>Mobile Money</strong>: The phone number and name for Uganda transactions</li>
-                                <li>For <strong>Bank Transfer</strong>: Full bank account details for international transfers</li>
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">2</div>
+                        <div>
+                            <p><span class="font-semibold text-charcoal">We Send You Details:</span> We will send you the specific payment information within 24 hours:</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm text-charcoal">
+                                <li><strong>Payoneer</strong>: A secure custom payment link for your chosen contribution amount</li>
+                                <li><strong>Mobile Money</strong>: The registered phone number, network (MTN/Airtel), and name for Uganda transactions</li>
+                                <li><strong>Bank Transfer</strong>: Full IBAN / SWIFT bank account details for international wires</li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">3</div>
-                        <p><span class="font-semibold">Make Payment:</span> Use the details we email you to complete your payment.</p>
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">3</div>
+                        <p><span class="font-semibold text-charcoal">Make Payment:</span> Complete the transfer with your chosen method.</p>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 flex-shrink-0">4</div>
-                        <p><span class="font-semibold">Send Confirmation:</span> Email your payment receipt to <strong>billing@binomugisha.org</strong> so we can track your contribution.</p>
+                        <div class="bg-sunlight-yellow text-charcoal rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold mr-3 mt-0.5 flex-shrink-0">4</div>
+                        <p><span class="font-semibold text-charcoal">Send Confirmation:</span> Forward your payment receipt to <strong>services@binomugisha.org</strong> or WhatsApp to receive film credits and updates.</p>
                     </div>
                 </div>
             </div>
             
             <!-- Payment Confirmation Section -->
-            <div class="max-w-2xl mx-auto mt-12 p-6 bg-white rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold mb-4 text-center">After Making Payment</h3>
-                <p class="text-center mb-4">Please send your payment receipt or screenshot to:</p>
-                <div class="text-center mb-6">
-                    <a href="mailto:lyenkynathan@gmail.com" 
-                       class="inline-block bg-savanna-green hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+            <div class="max-w-2xl mx-auto mt-8 p-6 sm:p-8 bg-white rounded-2xl shadow-md text-center">
+                <h3 class="text-xl font-semibold mb-3">After Making Payment</h3>
+                <p class="mb-4 text-sm text-charcoal">Please send your payment receipt or transfer screenshot to:</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-3 mb-4">
+                    <a href="mailto:services@binomugisha.org" 
+                       class="inline-flex items-center justify-center gap-2 bg-savanna-green hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-sm"
                        onclick="gtag('event', 'email_confirmation_click', {});">
-                       📧 billing@binomugisha.org
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                       </svg>
+                       <span>services@binomugisha.org</span>
+                    </a>
+                    <a href="https://wa.me/256705377130?text=Hi%20Nathan,%20I've%20sent%20my%20contribution%20for%20the%20documentary!%20Here%20is%20my%20receipt:" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-sm"
+                       onclick="gtag('event', 'whatsapp_confirmation_click', {});">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                           <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                       </svg>
+                       <span>WhatsApp Receipt</span>
                     </a>
                 </div>
-                <p class="text-center text-sm text-warm-grey">This helps us track your contribution and add you to the supporters list!</p>
+                <p class="text-sm text-warm-grey">This ensures we credit your contribution in the documentary and send you early viewing access.</p>
             </div>
             
             <!-- Trust Signals -->
             <div class="max-w-2xl mx-auto mt-8 text-center">
-                <div class="flex flex-wrap justify-center gap-6 text-savanna-green">
+                <div class="flex flex-wrap justify-center gap-6 text-savanna-green font-medium">
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -402,32 +784,82 @@
         </div>
     </section>
 
-    <!-- FAQ Section (AEO Optimization) -->
-    <section class="py-16 bg-off-white">
+    <!-- FAQ Section (Semantic & AEO Optimized with <details>/<summary>) -->
+    <section id="faq" class="py-16 bg-off-white">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-                <div class="space-y-6">
-                    <div>
-                        <button class="faq-question w-full text-left text-xl font-semibold mb-2 text-sunset-orange hover:text-earth-brown transition">
-                            What is this campaign about?
-                        </button>
-                    </div>
-                    <div>
-                        <button class="faq-question w-full text-left text-xl font-semibold mb-2 text-sunset-orange hover:text-earth-brown transition">
-                            How can I support?
-                        </button>
-                    </div>
-                    <div>
-                        <button class="faq-question w-full text-left text-xl font-semibold mb-2 text-sunset-orange hover:text-earth-brown transition">
-                            When will the film be released?
-                        </button>
-                    </div>
-                    <div>
-                        <button class="faq-question w-full text-left text-xl font-semibold mb-2 text-sunset-orange hover:text-earth-brown transition">
-                            How will my contribution be used?
-                        </button>
-                    </div>
+                <div class="space-y-4">
+                    
+                    <details class="group bg-white p-6 rounded-lg shadow-sm cursor-pointer transition">
+                        <summary class="flex justify-between items-center font-semibold text-xl text-sunset-orange hover:text-earth-brown list-none">
+                            <span>What is this campaign about?</span>
+                            <svg class="faq-icon h-5 w-5 text-sunset-orange transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 pt-4 border-t border-gray-100 text-charcoal space-y-3 leading-relaxed">
+                            <p>This campaign is funding the production of <strong>"A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut"</strong> — an intimate documentary that explores the world of bees from within their society, filmed by Ugandan documentary filmmaker Nathan Binomugisha.</p>
+                            <p>The film will showcase the intricate social structures, behaviors, and ecological importance of bees in East Africa, using innovative macro cinematography techniques to provide viewers with an unprecedented look into their world.</p>
+                        </div>
+                    </details>
+
+                    <details class="group bg-white p-6 rounded-lg shadow-sm cursor-pointer transition">
+                        <summary class="flex justify-between items-center font-semibold text-xl text-sunset-orange hover:text-earth-brown list-none">
+                            <span>How can I support?</span>
+                            <svg class="faq-icon h-5 w-5 text-sunset-orange transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 pt-4 border-t border-gray-100 text-charcoal space-y-3 leading-relaxed">
+                            <p><strong>Our Secure 4-Step Payment Process:</strong></p>
+                            <ol class="list-decimal pl-5 space-y-2">
+                                <li><strong>Request Payment Details:</strong> Click any "Get Payment Link" or "Email Me" button and submit your email.</li>
+                                <li><strong>We Send You Details:</strong> Within 24 hours, we email you:
+                                    <ul class="list-disc pl-5 mt-1">
+                                        <li><strong>Payoneer:</strong> Secure payment link for your chosen amount.</li>
+                                        <li><strong>Mobile Money:</strong> Phone number and name for Uganda transfers.</li>
+                                        <li><strong>Bank Transfer:</strong> Full bank details for international wires.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Make Payment:</strong> Complete the transaction securely.</li>
+                                <li><strong>Send Confirmation:</strong> Email your receipt to <strong>services@binomugisha.org</strong> or WhatsApp (+256 705 377 130) to receive film credit acknowledgement.</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <details class="group bg-white p-6 rounded-lg shadow-sm cursor-pointer transition">
+                        <summary class="flex justify-between items-center font-semibold text-xl text-sunset-orange hover:text-earth-brown list-none">
+                            <span>When will the film be released?</span>
+                            <svg class="faq-icon h-5 w-5 text-sunset-orange transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 pt-4 border-t border-gray-100 text-charcoal space-y-3 leading-relaxed">
+                            <p>The production timeline runs through 2026-2027, with post-production scheduled for completion by March 2027. Supporters will receive regular progress updates.</p>
+                            <p>Once completed, the film will be submitted to international film festivals and distributed globally. Supporters will receive early digital viewing access.</p>
+                        </div>
+                    </details>
+
+                    <details class="group bg-white p-6 rounded-lg shadow-sm cursor-pointer transition">
+                        <summary class="flex justify-between items-center font-semibold text-xl text-sunset-orange hover:text-earth-brown list-none">
+                            <span>How will my contribution be used?</span>
+                            <svg class="faq-icon h-5 w-5 text-sunset-orange transition-transform duration-200 group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="mt-4 pt-4 border-t border-gray-100 text-charcoal space-y-3 leading-relaxed">
+                            <p>Your contribution directly funds camera equipment, field production, editing, scoring, and distribution:</p>
+                            <ul class="list-disc pl-5 space-y-1.5">
+                                <li>Specialized filming equipment for macro and micro-cinematography</li>
+                                <li>Travel and field production expenses across conservation sites in Uganda</li>
+                                <li>Post-production editing, color grading, sound design, and score composition</li>
+                                <li>International film festival entry and distribution fees</li>
+                                <li>Educational outreach materials for environmental conservation</li>
+                            </ul>
+                        </div>
+                    </details>
+
                 </div>
             </div>
         </div>
@@ -458,37 +890,50 @@
                                 <a href="https://series.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://series.binomugisha.org', 'link_text': 'Partner on Our Next Film'});">Partner on Our Next Film</a>
                                 <a href="https://lygasi.binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://lygasi.binomugisha.org', 'link_text': 'Legacy Project'});">Legacy Project</a>
                                 <a href="https://lyenk.com" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://lyenk.com', 'link_text': 'Insights Engine'});">Insights Engine</a>
-                                <a href="mailto:info@binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'email_click', {'link_text': 'Email'});">Email</a>
+                                <a href="mailto:services@binomugisha.org" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'email_click', {'link_text': 'Email'});">Email</a>
                             </div>
-                            <div class="flex space-x-4">
-                                <a href="https://www.youtube.com/@binomugishan" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.youtube.com/@binomugishan', 'link_text': 'YouTube'});">YouTube</a>
-                                <a href="https://www.instagram.com/binomugisha_org/" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.instagram.com/binomugisha_org/', 'link_text': 'Instagram'});">Instagram</a>
-                                <a href="https://www.linkedin.com/in/binomugisha/" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.linkedin.com/in/binomugisha/', 'link_text': 'LinkedIn'});">LinkedIn</a>
-                                <a href="https://linktr.ee/BINOMUGISHAN" class="hover:text-sunlight-yellow transition" onclick="gtag('event', 'outbound_click', {'link_url': 'https://linktr.ee/BINOMUGISHAN', 'link_text': 'Linktree'});">Linktree</a>
+                            <div class="flex flex-wrap items-center gap-4">
+                                <a href="https://wa.me/256705377130?text=Hi%20Nathan,%20I'd%20like%20to%20connect%20regarding%20your%20films" target="_blank" rel="noopener noreferrer" class="hover:text-sunlight-yellow transition font-medium text-green-400 inline-flex items-center gap-1.5" onclick="gtag('event', 'outbound_click', {'link_url': 'https://wa.me/256705377130', 'link_text': 'WhatsApp'});">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                                    </svg>
+                                    <span>WhatsApp Us</span>
+                                </a>
+                                <a href="https://www.youtube.com/@binomugishan" class="hover:text-sunlight-yellow transition" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.youtube.com/@binomugishan', 'link_text': 'YouTube'});">YouTube</a>
+                                <a href="https://www.instagram.com/binomugisha_org/" class="hover:text-sunlight-yellow transition" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.instagram.com/binomugisha_org/', 'link_text': 'Instagram'});">Instagram</a>
+                                <a href="https://www.linkedin.com/in/binomugisha/" class="hover:text-sunlight-yellow transition" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'outbound_click', {'link_url': 'https://www.linkedin.com/in/binomugisha/', 'link_text': 'LinkedIn'});">LinkedIn</a>
+                                <a href="https://linktr.ee/BINOMUGISHAN" class="hover:text-sunlight-yellow transition" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'outbound_click', {'link_url': 'https://linktr.ee/BINOMUGISHAN', 'link_text': 'Linktree'});">Linktree</a>
                             </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-4">Legal</h3>
-                            <div class="space-y-2">
-                                <button id="terms-btn" class="block hover:text-sunlight-yellow transition text-left">Terms and Conditions</button>
-                                <button id="privacy-btn" class="block hover:text-sunlight-yellow transition text-left">Privacy Policy</button>
-                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Trust & Legal Information</h3>
+                            <ul class="space-y-2 text-sm text-gray-400">
+                                <li><strong>Project Location:</strong> Kampala, Uganda & East African Albertine Rift</li>
+                                <li><strong>Production Stage:</strong> Pre-Production & Production Research</li>
+                                <li><strong>Producer / Director:</strong> Nathan Binomugisha</li>
+                                <li><strong>Transparency:</strong> All funds directly support local cinematography equipment, field permits, and crew.</li>
+                                <li class="pt-2">
+                                    <button id="terms-btn" class="text-sunlight-yellow hover:underline mr-4">Terms & Conditions</button>
+                                    <button id="privacy-btn" class="text-sunlight-yellow hover:underline">Privacy Policy</button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                
-                <div class="border-t border-warm-grey mt-8 pt-6 text-center text-warm-grey">
-                    <p>© 2025 Nathan Binomugisha | All Rights Reserved.</p>
-                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; 2026 Nathan Binomugisha. All rights reserved.</p>
+                <p class="text-xs mt-1 text-gray-500">Documentary Series • Wildlife Filmmaking • Uganda</p>
             </div>
         </div>
     </footer>
 
     <!-- Payoneer Modal -->
     <div id="payoneer-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4 shadow-xl">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-semibold">Generate Payment Link</h3>
+                <h3 class="text-xl font-semibold">Pay with Payoneer / Card</h3>
                 <button onclick="document.getElementById('payoneer-modal').classList.add('hidden');" class="text-charcoal hover:text-sunset-orange">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -496,28 +941,31 @@
                 </button>
             </div>
             <div class="space-y-4">
-                <p>Enter the amount you'd like to contribute and your email. We'll generate a secure Payoneer payment link and send it to you.</p>
+                <p class="text-sm text-charcoal">Enter your details to receive a custom Payoneer checkout link for international card & account payments.</p>
                 
                 <div>
-                    <label class="block text-sm font-medium mb-1">Amount (USD)</label>
-                    <input type="number" id="payment-amount" min="1" value="15" 
-                           class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-medium mb-1">Your Email</label>
+                    <label class="block text-sm font-medium mb-1" for="payer-email">Your Email</label>
                     <input type="email" id="payer-email" placeholder="you@example.com"
                            class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
                 </div>
                 
+                <div>
+                    <label class="block text-sm font-medium mb-1" for="payment-amount">Amount (USD)</label>
+                    <div class="relative">
+                        <span class="absolute left-3 top-2 text-charcoal">$</span>
+                        <input type="number" id="payment-amount" value="50" min="5" step="5"
+                               class="w-full border rounded-lg pl-8 pr-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
+                    </div>
+                </div>
+                
                 <button onclick="createPaymentLink()" 
-                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center gap-2">
                     <span id="payoneer-submit-text">Request Payment Link</span>
-                    <div id="payoneer-submit-loader" class="loader hidden ml-2"></div>
+                    <span id="payoneer-submit-loader" class="loader hidden"></span>
                 </button>
                 
-                <p class="text-xs text-warm-grey text-center mt-4">
-                    We'll generate a Payoneer payment link and email it to you within 24 hours.
+                <p class="text-xs text-warm-grey text-center">
+                    We will send a personalized Payoneer payment link to your email within 24 hours.
                 </p>
             </div>
         </div>
@@ -525,7 +973,7 @@
 
     <!-- Mobile Money Modal -->
     <div id="mobile-money-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4 shadow-xl">
             <div class="flex justify-between items-center mb-4">
                 <h3 class="text-xl font-semibold">Mobile Money Details</h3>
                 <button onclick="document.getElementById('mobile-money-modal').classList.add('hidden');" class="text-charcoal hover:text-sunset-orange">
@@ -535,22 +983,22 @@
                 </button>
             </div>
             <div class="space-y-4">
-                <p>Enter your email to receive Mobile Money details for secure transfers within Uganda.</p>
+                <p class="text-sm text-charcoal">Enter your email to receive MTN / Airtel Mobile Money details for transfers within Uganda.</p>
                 
                 <div>
-                    <label class="block text-sm font-medium mb-1">Your Email</label>
+                    <label class="block text-sm font-medium mb-1" for="mobile-money-email">Your Email</label>
                     <input type="email" id="mobile-money-email" placeholder="you@example.com"
                            class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
                 </div>
                 
                 <button onclick="requestMobileMoneyDetails()" 
-                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center gap-2">
                     <span id="mobile-money-submit-text">Request Mobile Money Details</span>
-                    <div id="mobile-money-submit-loader" class="loader hidden ml-2"></div>
+                    <span id="mobile-money-submit-loader" class="loader hidden"></span>
                 </button>
                 
-                <p class="text-xs text-warm-grey text-center mt-4">
-                    We'll email you the Mobile Money phone number and name within 24 hours.
+                <p class="text-xs text-warm-grey text-center">
+                    We will email you the Mobile Money phone number, network, and registered name within 24 hours.
                 </p>
             </div>
         </div>
@@ -558,7 +1006,7 @@
 
     <!-- Bank Transfer Modal -->
     <div id="bank-transfer-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4 shadow-xl">
             <div class="flex justify-between items-center mb-4">
                 <h3 class="text-xl font-semibold">Bank Transfer Details</h3>
                 <button onclick="document.getElementById('bank-transfer-modal').classList.add('hidden');" class="text-charcoal hover:text-sunset-orange">
@@ -568,22 +1016,22 @@
                 </button>
             </div>
             <div class="space-y-4">
-                <p>Enter your email to receive secure bank transfer details for international transfers.</p>
+                <p class="text-sm text-charcoal">Enter your email to receive international SWIFT/wire transfer details.</p>
                 
                 <div>
-                    <label class="block text-sm font-medium mb-1">Your Email</label>
+                    <label class="block text-sm font-medium mb-1" for="bank-transfer-email">Your Email</label>
                     <input type="email" id="bank-transfer-email" placeholder="you@example.com"
                            class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sunset-orange">
                 </div>
                 
                 <button onclick="requestBankDetails()" 
-                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                        class="w-full bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center gap-2">
                     <span id="bank-transfer-submit-text">Request Bank Details</span>
-                    <div id="bank-transfer-submit-loader" class="loader hidden ml-2"></div>
+                    <span id="bank-transfer-submit-loader" class="loader hidden"></span>
                 </button>
                 
-                <p class="text-xs text-warm-grey text-center mt-4">
-                    We'll email you full bank account details for international transfers within 24 hours.
+                <p class="text-xs text-warm-grey text-center">
+                    We will email you full bank account details for international transfers within 24 hours.
                 </p>
             </div>
         </div>
@@ -591,7 +1039,7 @@
 
     <!-- Confirmation Modal -->
     <div id="confirmation-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4 shadow-xl">
             <div class="text-center">
                 <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" viewBox="0 0 20 20" fill="currentColor">
@@ -599,14 +1047,26 @@
                     </svg>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Thank You for Your Support!</h3>
-                <p class="mb-4">Please send your payment receipt/screenshot to:</p>
-                <a href="mailto:lyenkynathan@gmail.com" 
-                   class="inline-block bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-4 rounded-lg mb-4">
-                   📧 billing@binomugisha.org
-                </a>
-                <p class="text-sm text-warm-grey mb-4">This helps us track your contribution and add you to our supporters list.</p>
+                <p class="mb-4">Please forward your payment receipt or screenshot to:</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
+                    <a href="mailto:services@binomugisha.org" 
+                       class="inline-flex items-center justify-center gap-2 bg-sunset-orange hover:bg-earth-brown text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                       </svg>
+                       <span>services@binomugisha.org</span>
+                    </a>
+                    <a href="https://wa.me/256705377130" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-2 bg-forest-green hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                           <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                       </svg>
+                       <span>WhatsApp Receipt</span>
+                    </a>
+                </div>
+                <p class="text-sm text-warm-grey mb-4">This helps us track your contribution and add your name to our supporters credits list.</p>
                 <button onclick="document.getElementById('confirmation-modal').classList.add('hidden');" 
-                        class="text-sm text-sunset-orange hover:text-earth-brown">
+                        class="text-sm text-sunset-orange hover:text-earth-brown font-semibold">
                     Close
                 </button>
             </div>
@@ -615,7 +1075,7 @@
 
     <!-- Terms Modal -->
     <div id="terms-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
+        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto shadow-xl">
             <div class="flex justify-between items-center mb-4">
                 <h3 class="text-xl font-semibold">Terms and Conditions</h3>
                 <button id="close-terms" class="text-charcoal hover:text-sunset-orange">
@@ -624,24 +1084,24 @@
                     </svg>
                 </button>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-4 text-charcoal text-sm leading-relaxed">
                 <p>By supporting this project, you acknowledge that:</p>
                 <ul class="list-disc pl-5 space-y-2">
-                    <li>Your contribution is a donation to support the creation of the documentary "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut".</li>
+                    <li>Your contribution is a voluntary donation to support the creation of the documentary "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut".</li>
                     <li>Donations are non-refundable once processed.</li>
                     <li>The filmmaker, Nathan Binomugisha, retains all creative rights to the project.</li>
-                    <li>While every effort will be made to complete the project as described, the filmmaker reserves the right to make creative changes as needed.</li>
-                    <li>Supporters will receive updates on the project's progress but do not acquire any ownership or creative control.</li>
-                    <li>The estimated completion date is provided as a guide and may be subject to change based on production circumstances.</li>
+                    <li>While every effort will be made to complete the project as described, the filmmaker reserves the right to make creative adaptations as needed.</li>
+                    <li>Supporters will receive updates on the project's progress and acknowledgement in credits.</li>
+                    <li>The estimated completion date is provided as a guide and may be subject to production circumstances.</li>
                 </ul>
-                <p>If you have any questions about these terms, please contact info@binomugisha.org</p>
+                <p>If you have any questions about these terms, please contact <a href="mailto:services@binomugisha.org" class="text-sunset-orange underline font-medium">services@binomugisha.org</a> or <a href="mailto:info@binomugisha.org" class="text-sunset-orange underline font-medium">info@binomugisha.org</a>.</p>
             </div>
         </div>
     </div>
 
     <!-- Privacy Modal -->
     <div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
+        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto shadow-xl">
             <div class="flex justify-between items-center mb-4">
                 <h3 class="text-xl font-semibold">Privacy Policy</h3>
                 <button id="close-privacy" class="text-charcoal hover:text-sunset-orange">
@@ -650,496 +1110,231 @@
                     </svg>
                 </button>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-4 text-charcoal text-sm leading-relaxed">
                 <p>This privacy policy explains how we handle your information:</p>
                 <ul class="list-disc pl-5 space-y-2">
-                    <li>We collect your email only to send payment details and project updates.</li>
-                    <li>Payment information is processed directly by Payoneer, MTN Mobile Money, or your banking institution - we do not store payment details.</li>
-                    <li>We may use analytics tools to understand how visitors use our site, but this data is anonymized.</li>
-                    <li>If you contact us via email, we will use your contact information only to respond to your inquiry.</li>
-                    <li>We do not share your personal information with third parties except as required to process donations or if required by law.</li>
-                    <li>By using this site, you consent to our privacy practices.</li>
+                    <li>We collect your email address solely to send requested payment details, receipts, and project updates.</li>
+                    <li>Payment processing is performed securely via Payoneer, MTN/Airtel, or your banking provider — we do not store sensitive payment credentials.</li>
+                    <li>We use Google Analytics with anonymized telemetry to understand visitor interest.</li>
+                    <li>We never sell or distribute your personal contact information to third parties.</li>
                 </ul>
-                <p>If you have questions about our privacy practices, please contact info@binomugisha.org</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- FAQ Modals -->
-    <div id="faq-modal-1" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-semibold">What is this campaign about?</h3>
-                <button class="close-faq text-charcoal hover:text-sunset-orange">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="space-y-4">
-                <p>This campaign is funding the production of "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut" - an intimate documentary that explores the world of bees from within their society, filmed by Ugandan documentary filmmaker Nathan Binomugisha.</p>
-                <p>The film will showcase the intricate social structures, behaviors, and ecological importance of bees in East Africa, using innovative filming techniques to provide viewers with an unprecedented look into their world.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="faq-modal-2" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-semibold">How can I support?</h3>
-                <button class="close-faq text-charcoal hover:text-sunset-orange">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="space-y-4">
-                <p><strong>Our Secure Payment Process:</strong></p>
-                <ol class="list-decimal pl-5 space-y-2">
-                    <li><strong>Request Payment Details:</strong> Click any "Email Me" button and enter your email</li>
-                    <li><strong>We Send You Details:</strong> Within 24 hours, we'll email you:
-                        <ul class="list-disc pl-5 mt-1">
-                            <li><strong>Payoneer:</strong> Secure payment link for your chosen amount</li>
-                            <li><strong>Mobile Money:</strong> Phone number and name for Uganda transactions</li>
-                            <li><strong>Bank Transfer:</strong> Full bank details for international transfers</li>
-                        </ul>
-                    </li>
-                    <li><strong>Make Payment:</strong> Use the details we email you</li>
-                    <li><strong>Send Confirmation:</strong> Email your receipt to billing@binomugisha.org</li>
-                </ol>
-                <p>All contributions make a meaningful difference. Supporters will receive updates and be acknowledged in the film's credits.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="faq-modal-3" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-semibold">When will the film be released?</h3>
-                <button class="close-faq text-charcoal hover:text-sunset-orange">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="space-y-4">
-                <p>The production timeline runs through 2026-2027, with post-production scheduled for completion by March 2027. Supporters will receive regular updates on the progress throughout the production process.</p>
-                <p>Once completed, the film will be submitted to international film festivals and made available through various distribution channels. Supporters will be among the first to receive viewing access.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="faq-modal-4" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-semibold">How will my contribution be used?</h3>
-                <button class="close-faq text-charcoal hover:text-sunset-orange">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="space-y-4">
-                <p>Your contribution will directly fund equipment, production costs, post-production, and distribution of the documentary, helping to bring this important story to audiences worldwide.</p>
-                <p>Specifically, funds will be allocated to:</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li>Specialized filming equipment for macro and micro-cinematography</li>
-                    <li>Travel and field production expenses across various locations in Uganda</li>
-                    <li>Post-production including editing, color grading, sound design, and music composition</li>
-                    <li>Distribution and festival submission fees</li>
-                    <li>Conservation and educational outreach materials</li>
-                </ul>
-                <p>We are committed to transparent financial reporting and will provide updates on how funds are being utilized throughout the project.</p>
+                <p>If you have questions about our privacy practices, please contact <a href="mailto:services@binomugisha.org" class="text-sunset-orange underline font-medium">services@binomugisha.org</a> or <a href="mailto:info@binomugisha.org" class="text-sunset-orange underline font-medium">info@binomugisha.org</a>.</p>
             </div>
         </div>
     </div>
 
     <!-- JavaScript -->
     <script>
-        // Web3Forms Configuration
         const WEB3FORMS_ACCESS_KEY = '9ce26fff-f98c-4fa2-9f2a-7bb1a3cfb231';
 
-        // Enhanced event tracking
         document.addEventListener('DOMContentLoaded', function() {
-            // Support button clicks tracking
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIconOpen = document.getElementById('menu-icon-open');
+            const menuIconClose = document.getElementById('menu-icon-close');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    const isHidden = mobileMenu.classList.toggle('hidden');
+                    menuIconOpen.classList.toggle('hidden', !isHidden);
+                    menuIconClose.classList.toggle('hidden', isHidden);
+                });
+
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.add('hidden');
+                        menuIconOpen.classList.remove('hidden');
+                        menuIconClose.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Support button click tracking
             document.querySelectorAll('a[href="#support"]').forEach(button => {
                 button.addEventListener('click', function() {
                     gtag('event', 'support_button_click', {
-                        'button_text': this.textContent,
+                        'button_text': this.textContent.trim(),
                         'page_location': window.location.href,
-                        'button_location': this.closest('section') ? this.closest('section').id : 'unknown'
+                        'button_location': this.closest('section') ? this.closest('section').id : 'nav'
                     });
                 });
             });
 
-            // Watch film button clicks
+            // Watch film button click tracking
             document.querySelectorAll('a[href="#showcase"]').forEach(button => {
                 button.addEventListener('click', function() {
                     gtag('event', 'watch_film_click', {
-                        'button_text': this.textContent,
+                        'button_text': this.textContent.trim(),
                         'page_location': window.location.href,
-                        'button_location': this.closest('section') ? this.closest('section').id : 'unknown'
+                        'button_location': this.closest('section') ? this.closest('section').id : 'nav'
                     });
                 });
             });
 
-            // Enhanced video tracking
-            const video = document.getElementById('documentary-video');
-            if (video) {
-                video.addEventListener('play', function() {
-                    gtag('event', 'video_play', {
-                        'video_title': 'The Fascinating World of Dragonflies, Beetles, and Millipedes',
-                        'video_duration': Math.round(video.duration),
-                        'video_current_time': Math.round(video.currentTime)
-                    });
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href !== '') {
+                        const target = document.querySelector(href);
+                        if (target) {
+                            e.preventDefault();
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                            gtag('event', 'section_visit', {
+                                'section_id': href.substring(1),
+                                'section_name': this.textContent.trim()
+                            });
+                        }
+                    }
                 });
+            });
 
-                video.addEventListener('ended', function() {
-                    gtag('event', 'video_complete', {
-                        'video_title': 'The Fascinating World of Dragonflies, Beetles, and Millipedes',
-                        'video_duration': Math.round(video.duration)
-                    });
-                });
-
-                // Track video progress
-                let lastProgress = 0;
-                video.addEventListener('timeupdate', function() {
-                    const progress = Math.round((video.currentTime / video.duration) * 100);
-                    if (progress >= 25 && lastProgress < 25) {
-                        gtag('event', 'video_progress', {'progress': 25});
-                        lastProgress = 25;
-                    } else if (progress >= 50 && lastProgress < 50) {
-                        gtag('event', 'video_progress', {'progress': 50});
-                        lastProgress = 50;
-                    } else if (progress >= 75 && lastProgress < 75) {
-                        gtag('event', 'video_progress', {'progress': 75});
-                        lastProgress = 75;
+            // Share Button
+            const shareBtn = document.getElementById('share-btn');
+            if (shareBtn) {
+                shareBtn.addEventListener('click', function() {
+                    if (navigator.share) {
+                        navigator.share({
+                            title: 'Support "A Day in the Life of Insects: Bees"',
+                            text: 'Help bring this Ugandan wildlife documentary to life by Nathan Binomugisha',
+                            url: window.location.href
+                        })
+                        .then(() => {
+                            gtag('event', 'share', {
+                                'method': 'native_share',
+                                'content_type': 'page',
+                                'content_id': window.location.href
+                            });
+                        })
+                        .catch((error) => console.log('Error sharing:', error));
+                    } else {
+                        navigator.clipboard.writeText(window.location.href)
+                            .then(() => {
+                                gtag('event', 'share', {
+                                    'method': 'copy_link',
+                                    'content_type': 'page',
+                                    'content_id': window.location.href
+                                });
+                                alert('Page URL copied to clipboard!');
+                            })
+                            .catch(err => {
+                                console.error('Failed to copy: ', err);
+                            });
                     }
                 });
             }
 
-            // FAQ interaction tracking
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach((question, index) => {
-                question.addEventListener('click', function() {
-                    const faqModal = document.getElementById(`faq-modal-${index + 1}`);
-                    faqModal.classList.remove('hidden');
-                    
-                    gtag('event', 'faq_view', {
-                        'faq_question': this.textContent.trim(),
-                        'faq_index': index + 1
-                    });
+            // Terms & Privacy Modals
+            const termsBtn = document.getElementById('terms-btn');
+            const termsModal = document.getElementById('terms-modal');
+            const closeTerms = document.getElementById('close-terms');
+
+            if (termsBtn && termsModal && closeTerms) {
+                termsBtn.addEventListener('click', function() {
+                    termsModal.classList.remove('hidden');
+                    gtag('event', 'terms_view', {});
                 });
-            });
-
-            // Scroll depth tracking
-            let scrollDepth = 0;
-            window.addEventListener('scroll', function() {
-                const newDepth = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-                if (newDepth > scrollDepth) {
-                    if (newDepth >= 25 && scrollDepth < 25) {
-                        gtag('event', 'scroll_depth', {'scroll_percentage': 25});
-                    } else if (newDepth >= 50 && scrollDepth < 50) {
-                        gtag('event', 'scroll_depth', {'scroll_percentage': 50});
-                    } else if (newDepth >= 75 && scrollDepth < 75) {
-                        gtag('event', 'scroll_depth', {'scroll_percentage': 75});
-                    } else if (newDepth >= 90 && scrollDepth < 90) {
-                        gtag('event', 'scroll_depth', {'scroll_percentage': 90});
-                    }
-                    scrollDepth = newDepth;
-                }
-            });
-
-            // Time on page tracking
-            let startTime = Date.now();
-            window.addEventListener('beforeunload', function() {
-                const timeSpent = Math.round((Date.now() - startTime) / 1000);
-                gtag('event', 'time_on_page', {
-                    'time_seconds': timeSpent,
-                    'page_location': window.location.href
+                closeTerms.addEventListener('click', function() {
+                    termsModal.classList.add('hidden');
                 });
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Track section visits
-                    gtag('event', 'section_visit', {
-                        'section_id': this.getAttribute('href').substring(1),
-                        'section_name': this.textContent.trim()
-                    });
-                }
-            });
-        });
-
-        // Terms modal
-        const termsBtn = document.getElementById('terms-btn');
-        const termsModal = document.getElementById('terms-modal');
-        const closeTerms = document.getElementById('close-terms');
-
-        termsBtn.addEventListener('click', function() {
-            termsModal.classList.remove('hidden');
-            gtag('event', 'terms_view', {});
-        });
-
-        closeTerms.addEventListener('click', function() {
-            termsModal.classList.add('hidden');
-        });
-
-        // Privacy modal
-        const privacyBtn = document.getElementById('privacy-btn');
-        const privacyModal = document.getElementById('privacy-modal');
-        const closePrivacy = document.getElementById('close-privacy');
-
-        privacyBtn.addEventListener('click', function() {
-            privacyModal.classList.remove('hidden');
-            gtag('event', 'privacy_view', {});
-        });
-
-        closePrivacy.addEventListener('click', function() {
-            privacyModal.classList.add('hidden');
-        });
-
-        // FAQ modal functionality
-        const closeFaqButtons = document.querySelectorAll('.close-faq');
-
-        closeFaqButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const faqModal = this.closest('.fixed');
-                faqModal.classList.add('hidden');
-            });
-        });
-
-        // Share functionality
-        const shareBtn = document.getElementById('share-btn');
-        shareBtn.addEventListener('click', function() {
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Support "A Day in the Life of Insects: Bees"',
-                    text: 'Help bring this Ugandan documentary to life',
-                    url: window.location.href
-                })
-                .then(() => {
-                    gtag('event', 'share', {
-                        'method': 'native_share',
-                        'content_type': 'page',
-                        'content_id': window.location.href
-                    });
-                })
-                .catch((error) => console.log('Error sharing:', error));
-            } else {
-                // Fallback for browsers that don't support the Web Share API
-                navigator.clipboard.writeText(window.location.href)
-                    .then(() => {
-                        gtag('event', 'share', {
-                            'method': 'copy_link',
-                            'content_type': 'page',
-                            'content_id': window.location.href
-                        });
-                        alert('Page URL copied to clipboard!');
-                    })
-                    .catch(err => {
-                        console.error('Failed to copy: ', err);
-                    });
             }
-        });
 
-        // Close modals when clicking outside
-        window.addEventListener('click', function(e) {
-            if (e.target === termsModal) {
-                termsModal.classList.add('hidden');
+            const privacyBtn = document.getElementById('privacy-btn');
+            const privacyModal = document.getElementById('privacy-modal');
+            const closePrivacy = document.getElementById('close-privacy');
+
+            if (privacyBtn && privacyModal && closePrivacy) {
+                privacyBtn.addEventListener('click', function() {
+                    privacyModal.classList.remove('hidden');
+                    gtag('event', 'privacy_view', {});
+                });
+                closePrivacy.addEventListener('click', function() {
+                    privacyModal.classList.add('hidden');
+                });
             }
-            if (e.target === privacyModal) {
-                privacyModal.classList.add('hidden');
-            }
-            
-            // Close FAQ modals when clicking outside
-            document.querySelectorAll('[id^="faq-modal-"]').forEach(modal => {
-                if (e.target === modal) {
-                    modal.classList.add('hidden');
-                }
-            });
 
             // Close modals when clicking outside
-            ['payoneer-modal', 'mobile-money-modal', 'bank-transfer-modal', 'confirmation-modal'].forEach(modalId => {
-                const modal = document.getElementById(modalId);
-                if (modal && e.target === modal) {
-                    modal.classList.add('hidden');
-                }
+            window.addEventListener('click', function(e) {
+                ['payoneer-modal', 'mobile-money-modal', 'bank-transfer-modal', 'confirmation-modal', 'terms-modal', 'privacy-modal'].forEach(modalId => {
+                    const modal = document.getElementById(modalId);
+                    if (modal && e.target === modal) {
+                        modal.classList.add('hidden');
+                    }
+                });
             });
         });
 
-        // Payoneer payment link generator
+        // Payoneer Payment Link Request
         function generatePayoneerLink() {
             gtag('event', 'begin_checkout', {'payment_method': 'Payoneer'});
             document.getElementById('payoneer-modal').classList.remove('hidden');
-        }
-
-        // Mobile Money modal
-        function showMobileMoneyModal() {
-            gtag('event', 'begin_checkout', {'payment_method': 'Mobile_Money'});
-            document.getElementById('mobile-money-modal').classList.remove('hidden');
-        }
-
-        // Bank Transfer modal
-        function showBankTransferModal() {
-            gtag('event', 'begin_checkout', {'payment_method': 'Bank_Transfer'});
-            document.getElementById('bank-transfer-modal').classList.remove('hidden');
         }
 
         function createPaymentLink() {
             const amount = document.getElementById('payment-amount').value;
             const email = document.getElementById('payer-email').value;
             
-            if (!email || !amount || amount < 1) {
+            if (!email || !amount || amount < 1 || !email.includes('@')) {
                 alert('Please enter a valid amount and email address');
                 return;
             }
             
-            // Show loading state
             const submitText = document.getElementById('payoneer-submit-text');
             const submitLoader = document.getElementById('payoneer-submit-loader');
             
             submitText.textContent = 'Processing...';
             submitLoader.classList.remove('hidden');
             
-            // Send data to Web3Forms
             const formData = new FormData();
             formData.append('access_key', WEB3FORMS_ACCESS_KEY);
-            formData.append('subject', `💳 Payoneer Payment Link Request - $${amount} USD`);
+            formData.append('subject', `Payoneer Payment Link Request - $${amount} USD`);
             formData.append('from_name', 'Documentary Supporter');
             formData.append('email', email);
             formData.append('amount', `${amount} USD`);
-            formData.append('message', `New payment link request received:
+            formData.append('message', `New Payoneer payment link request:\n\nAmount: $${amount} USD\nEmail: ${email}\nTime: ${new Date().toLocaleString()}\nPage: ${window.location.href}`);
             
-💰 Amount: $${amount} USD
-📧 Supporter Email: ${email}
-📅 Date: ${new Date().toLocaleString()}
-🌍 Location: ${window.location.href}
-
-ACTION REQUIRED:
-1. Generate Payoneer payment link for $${amount}
-2. Send payment link to: ${email}
-3. Add ${email} to supporters list
-
----`);
-            
-            // Send to Web3Forms
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
                 if (data.success) {
-                    // --- ADD THIS TRACKING CODE ---
                     gtag('event', 'generate_lead', {
                         'currency': 'USD',
-                        'value': amount,
+                        'value': parseFloat(amount),
                         'payment_method': 'Payoneer_Request'
                     });
-                    // -----------------------------
                     
-                    // Send auto-reply to supporter
-                    const autoReplyFormData = new FormData();
-                    autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
-                    autoReplyFormData.append('subject', 'Thank You for Your Support!');
-                    autoReplyFormData.append('from_name', 'Nathan Binomugisha');
-                    autoReplyFormData.append('email', email);
-                    autoReplyFormData.append('message', `Dear Supporter,
-
-Thank you for requesting a payment link to support "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut"!
-
-We've received your request for a $${amount} USD payment link.
-
-✅ **Next Steps:**
-1. We'll generate a secure Payoneer payment link
-2. We'll email it to you within 24 hours
-3. You'll receive a receipt upon payment
-
-Once you make the payment, please forward your receipt to lyenkynathan@gmail.com so we can add you to our supporters list and keep you updated on the project's progress.
-
-Your support means the world to me and helps bring this important story to life.
-
-With gratitude,
-Nathan Binomugisha
-Documentary Filmmaker
-
----
-Project: A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut
-Website: https://series.binomugisha.org`);
-                    
-                    return fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        body: autoReplyFormData
-                    });
-                } else {
-                    throw new Error('Failed to send request');
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    gtag('event', 'payment_link_requested', {
-                        'amount': amount,
-                        'currency': 'USD',
-                        'email_provided': 'yes'
-                    });
-                    
-                    alert(`✅ Thank you, ${email}!\n\nWe've received your request for a $${amount} payment link.\n\n📧 Check your email for confirmation.\n\nWe'll send you the Payoneer payment link within 24 hours.`);
-                    
-                    // Close modal
+                    alert(`Thank you, ${email}!\n\nWe have received your request for a $${amount} USD Payoneer link.\n\nWe will email you the secure payment link within 24 hours.`);
                     document.getElementById('payoneer-modal').classList.add('hidden');
-                    
-                    // Reset form
-                    document.getElementById('payment-amount').value = '15';
                     document.getElementById('payer-email').value = '';
+                } else {
+                    throw new Error('Form submission failed');
                 }
             })
-            .catch(error => {
-                console.error('Error:', error);
-                
-                // Fallback email method
-                const emailSubject = `Payoneer Payment Link Request - $${amount} USD`;
-                const emailBody = `Hi Nathan,
-
-I'd like to support your documentary with $${amount} USD.
-
-Please send me the Payoneer payment link.
-
-My email: ${email}
-
-Thank you!`;
-                
-                const mailtoLink = `mailto:binomugishacom@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-                
-                alert(`There was a temporary issue with our system.\n\nWe've prepared an email for you. Please send it to receive your payment link.\n\nAmount: $${amount}\nYour email: ${email}`);
-                
+            .catch(err => {
+                console.error('Error:', err);
+                const mailtoLink = `mailto:services@binomugisha.org?subject=${encodeURIComponent(`Payoneer Payment Link Request - $${amount} USD`)}&body=${encodeURIComponent(`Hi Nathan,\n\nI would like to support your documentary with $${amount} USD.\nPlease send me the Payoneer payment link.\n\nMy email: ${email}\nThank you!`)}`;
+                alert(`There was a brief connectivity issue.\n\nWe prepared an email draft for you to submit directly to services@binomugisha.org.`);
                 window.open(mailtoLink, '_blank');
-                
-                // Track fallback usage
-                gtag('event', 'payment_link_fallback', {
-                    'amount': amount,
-                    'fallback_reason': 'web3forms_error'
-                });
             })
             .finally(() => {
-                // Reset button state
                 submitText.textContent = 'Request Payment Link';
                 submitLoader.classList.add('hidden');
             });
         }
 
-        // Request Mobile Money details
+        // Mobile Money Details Request
+        function showMobileMoneyModal() {
+            gtag('event', 'begin_checkout', {'payment_method': 'Mobile_Money'});
+            document.getElementById('mobile-money-modal').classList.remove('hidden');
+        }
+
         function requestMobileMoneyDetails() {
             const email = document.getElementById('mobile-money-email').value;
             
@@ -1148,132 +1343,57 @@ Thank you!`;
                 return;
             }
             
-            // Show loading state
             const submitText = document.getElementById('mobile-money-submit-text');
             const submitLoader = document.getElementById('mobile-money-submit-loader');
             
             submitText.textContent = 'Processing...';
             submitLoader.classList.remove('hidden');
             
-            gtag('event', 'mobile_money_details_request', {});
-            
-            // Send to Web3Forms
             const formData = new FormData();
             formData.append('access_key', WEB3FORMS_ACCESS_KEY);
-            formData.append('subject', '📱 Mobile Money Details Request');
+            formData.append('subject', 'Mobile Money Details Request');
             formData.append('from_name', 'Documentary Supporter');
             formData.append('email', email);
-            formData.append('message', `New Mobile Money details request received:
-            
-📧 Supporter Email: ${email}
-📱 Requested: Uganda Mobile Money Details
-📅 Date: ${new Date().toLocaleString()}
-🌍 Location: ${window.location.href}
-
-ACTION REQUIRED:
-1. Send Mobile Money details to: ${email}
-2. Include: Phone number, name, and network (MTN/Airtel)
-3. Add ${email} to mobile money inquiries list
-
----`);
+            formData.append('message', `New Mobile Money request:\n\nEmail: ${email}\nTime: ${new Date().toLocaleString()}\nPage: ${window.location.href}`);
             
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
                 if (data.success) {
-                    // --- ADD THIS TRACKING CODE ---
                     gtag('event', 'generate_lead', {
                         'currency': 'USD',
-                        'value': 10.00, 
+                        'value': 15.00,
                         'payment_method': 'Mobile_Money_Request'
                     });
-                    // -----------------------------
                     
-                    // Send auto-reply
-                    const autoReplyFormData = new FormData();
-                    autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
-                    autoReplyFormData.append('subject', 'Mobile Money Details Request Received');
-                    autoReplyFormData.append('from_name', 'Nathan Binomugisha');
-                    autoReplyFormData.append('email', email);
-                    autoReplyFormData.append('message', `Dear Supporter,
-
-Thank you for requesting Mobile Money details to support "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut"!
-
-We've received your request for Mobile Money payment details.
-
-✅ **Next Steps:**
-1. We'll email you our Mobile Money details within 24 hours
-2. You'll receive phone number, name, and network information
-3. You can then make your transfer via Mobile Money
-
-Once you make the payment, please forward your receipt to lyenkynathan@gmail.com so we can add you to our supporters list and keep you updated on the project's progress.
-
-Thank you for supporting Ugandan storytelling!
-
-With gratitude,
-Nathan Binomugisha
-Documentary Filmmaker
-
----
-Project: A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut
-Website: https://series.binomugisha.org`);
-                    
-                    return fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        body: autoReplyFormData
-                    });
-                } else {
-                    throw new Error('Failed to send request');
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert(`✅ Thank you, ${email}!\n\nWe've received your request for Mobile Money details.\n\n📧 Check your email for confirmation.\n\nWe'll send you the Mobile Money details within 24 hours.`);
-                    
-                    gtag('event', 'mobile_money_email_provided', {
-                        'email_provided': 'yes'
-                    });
-                    
-                    // Close modal
+                    alert(`Thank you, ${email}!\n\nWe will email you our Uganda Mobile Money (MTN/Airtel) details within 24 hours.`);
                     document.getElementById('mobile-money-modal').classList.add('hidden');
-                    
-                    // Reset form
                     document.getElementById('mobile-money-email').value = '';
+                } else {
+                    throw new Error('Submission failed');
                 }
             })
-            .catch(error => {
-                console.error('Error:', error);
-                
-                // Fallback
-                const emailSubject = 'Mobile Money Details Request';
-                const emailBody = `Hi Nathan,
-
-I'd like to support your documentary via Mobile Money.
-
-Please send me your Mobile Money details (phone number, name, network).
-
-My email: ${email}
-
-Thank you!`;
-                
-                const mailtoLink = `mailto:binomugishacom@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-                
-                alert(`There was a temporary issue. We've prepared an email for you. Please send it to receive Mobile Money details.\n\nYour email: ${email}`);
-                
+            .catch(err => {
+                console.error('Error:', err);
+                const mailtoLink = `mailto:services@binomugisha.org?subject=${encodeURIComponent('Mobile Money Details Request')}&body=${encodeURIComponent(`Hi Nathan,\n\nI would like to support your documentary via Mobile Money.\nPlease email me your Mobile Money details.\n\nMy email: ${email}`)}`;
+                alert(`There was a brief connectivity issue.\n\nWe prepared an email draft for you to submit to services@binomugisha.org.`);
                 window.open(mailtoLink, '_blank');
             })
             .finally(() => {
-                // Reset button state
                 submitText.textContent = 'Request Mobile Money Details';
                 submitLoader.classList.add('hidden');
             });
         }
 
-        // Request Bank Transfer details
+        // Bank Transfer Details Request
+        function showBankTransferModal() {
+            gtag('event', 'begin_checkout', {'payment_method': 'Bank_Transfer'});
+            document.getElementById('bank-transfer-modal').classList.remove('hidden');
+        }
+
         function requestBankDetails() {
             const email = document.getElementById('bank-transfer-email').value;
             
@@ -1282,175 +1402,104 @@ Thank you!`;
                 return;
             }
             
-            // Show loading state
             const submitText = document.getElementById('bank-transfer-submit-text');
             const submitLoader = document.getElementById('bank-transfer-submit-loader');
             
             submitText.textContent = 'Processing...';
             submitLoader.classList.remove('hidden');
             
-            gtag('event', 'bank_details_request', {});
-            
-            // Send to Web3Forms
             const formData = new FormData();
             formData.append('access_key', WEB3FORMS_ACCESS_KEY);
-            formData.append('subject', '🏦 Bank Transfer Details Request');
+            formData.append('subject', 'Bank Transfer Details Request');
             formData.append('from_name', 'Documentary Supporter');
             formData.append('email', email);
-            formData.append('message', `New bank transfer details request received:
-            
-📧 Supporter Email: ${email}
-💼 Requested: International Bank Transfer Details
-📅 Date: ${new Date().toLocaleString()}
-🌍 Location: ${window.location.href}
-
-ACTION REQUIRED:
-1. Send bank transfer details to: ${email}
-2. Include: Bank name, account number, SWIFT/BIC, routing details
-3. Add ${email} to banking inquiries list
-
----`);
+            formData.append('message', `New International Bank Wire details request:\n\nEmail: ${email}\nTime: ${new Date().toLocaleString()}\nPage: ${window.location.href}`);
             
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
                 if (data.success) {
-                    // --- ADD THIS TRACKING CODE ---
                     gtag('event', 'generate_lead', {
                         'currency': 'USD',
-                        'value': 50.00, 
+                        'value': 50.00,
                         'payment_method': 'Bank_Transfer_Request'
                     });
-                    // -----------------------------
                     
-                    // Send auto-reply
-                    const autoReplyFormData = new FormData();
-                    autoReplyFormData.append('access_key', WEB3FORMS_ACCESS_KEY);
-                    autoReplyFormData.append('subject', 'Bank Transfer Details Request Received');
-                    autoReplyFormData.append('from_name', 'Nathan Binomugisha');
-                    autoReplyFormData.append('email', email);
-                    autoReplyFormData.append('message', `Dear Supporter,
-
-Thank you for requesting bank transfer details to support "A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut"!
-
-We've received your request for international bank transfer details.
-
-✅ **Next Steps:**
-1. We'll email you our bank account details within 24 hours
-2. You'll receive full banking information for international transfers
-3. You can then make your bank transfer
-
-Once you make the payment, please forward your receipt to lyenkynathan@gmail.com so we can add you to our supporters list and keep you updated on the project's progress.
-
-Thank you for supporting this important documentary!
-
-With gratitude,
-Nathan Binomugisha
-Documentary Filmmaker
-
----
-Project: A Day in the Life of Insects: Bees. A Ugandan Filmmaker's Cut
-Website: https://series.binomugisha.org`);
-                    
-                    return fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        body: autoReplyFormData
-                    });
-                } else {
-                    throw new Error('Failed to send request');
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert(`✅ Thank you, ${email}!\n\nWe've received your request for bank transfer details.\n\n📧 Check your email for confirmation.\n\nWe'll send you the bank details within 24 hours.`);
-                    
-                    gtag('event', 'bank_details_email_provided', {
-                        'email_provided': 'yes'
-                    });
-                    
-                    // Close modal
+                    alert(`Thank you, ${email}!\n\nWe will email you full SWIFT / IBAN wire transfer details within 24 hours.`);
                     document.getElementById('bank-transfer-modal').classList.add('hidden');
-                    
-                    // Reset form
                     document.getElementById('bank-transfer-email').value = '';
+                } else {
+                    throw new Error('Submission failed');
                 }
             })
-            .catch(error => {
-                console.error('Error:', error);
-                
-                // Fallback
-                const emailSubject = 'Bank Transfer Details Request';
-                const emailBody = `Hi Nathan,
-
-I'd like to support your documentary via international bank transfer.
-
-Please send me your bank account details.
-
-My email: ${email}
-
-Thank you!`;
-                
-                const mailtoLink = `mailto:binomugishacom@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-                
-                alert(`There was a temporary issue. We've prepared an email for you. Please send it to receive bank transfer details.\n\nYour email: ${email}`);
-                
+            .catch(err => {
+                console.error('Error:', err);
+                const mailtoLink = `mailto:services@binomugisha.org?subject=${encodeURIComponent('Bank Transfer Details Request')}&body=${encodeURIComponent(`Hi Nathan,\n\nI would like to support your documentary via international bank transfer.\nPlease send me your bank details.\n\nMy email: ${email}`)}`;
+                alert(`There was a brief connectivity issue.\n\nWe prepared an email draft for you to submit to services@binomugisha.org.`);
                 window.open(mailtoLink, '_blank');
             })
             .finally(() => {
-                // Reset button state
                 submitText.textContent = 'Request Bank Details';
                 submitLoader.classList.add('hidden');
             });
         }
 
-        // Track payment method selection
-        document.querySelectorAll('[onclick*="donation_intent"]').forEach(button => {
-            const originalOnClick = button.getAttribute('onclick');
-            button.setAttribute('onclick', originalOnClick + '; trackPaymentMethod(this);');
-        });
-
-        function trackPaymentMethod(element) {
-            const text = element.textContent.toLowerCase();
-            let method = 'other';
+        // Interactive Hero Video Player Launcher
+        function playHeroDocumentaryVideo() {
+            const facade = document.getElementById('hero-video-facade');
+            const wrapper = document.getElementById('hero-video-wrapper');
             
-            if (text.includes('mobile')) method = 'mobile_money';
-            else if (text.includes('bank')) method = 'bank_transfer';
-            else if (text.includes('payoneer') || text.includes('link')) method = 'payoneer';
-            
-            gtag('event', 'payment_method_selected', {
-                'method': method,
-                'button_text': element.textContent.trim()
+            gtag('event', 'video_play_click', {
+                'video_id': 'O8u0B6tG-Mc',
+                'video_title': 'The Fascinating World of Dragonflies, Beetles, and Millipedes',
+                'video_location': 'hero_split_card'
             });
+            
+            wrapper.innerHTML = `
+                <iframe 
+                    id="hero-documentary-video"
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/O8u0B6tG-Mc?autoplay=1&rel=0" 
+                    title="Documentary: The Fascinating World of Dragonflies, Beetles, and Millipedes" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                ></iframe>
+            `;
+            facade.classList.add('hidden');
+            wrapper.classList.remove('hidden');
         }
 
-        // Simple progress update (in a real implementation, this would come from your backend)
-        function updateProgress() {
-            // This is a simulated progress update
-            // In a real implementation, you would fetch this data from your backend
-            const raisedAmount = document.getElementById('raised-amount');
-            const progressBar = document.getElementById('progress-bar');
+        // Interactive Showcase Video Player Launcher
+        function playDocumentaryVideo() {
+            const facade = document.getElementById('video-facade');
+            const wrapper = document.getElementById('video-player-wrapper');
             
-            // Simulate a small increase in donations
-            const currentAmount = 3600;
-            const newAmount = currentAmount + Math.floor(Math.random() * 50);
+            gtag('event', 'video_play_click', {
+                'video_id': 'O8u0B6tG-Mc',
+                'video_title': 'The Fascinating World of Dragonflies, Beetles, and Millipedes',
+                'video_location': 'showcase_section'
+            });
             
-            if (newAmount <= 15000) {
-                raisedAmount.textContent = `$${newAmount.toLocaleString()} USD`;
-                const progressPercent = (newAmount / 15000) * 100;
-                progressBar.style.width = `${progressPercent}%`;
-                
-                // Update the progress text
-                document.querySelector('.text-center.mt-2.text-warm-grey').textContent = 
-                    `${Math.round(progressPercent)}% of goal reached`;
-            }
+            wrapper.innerHTML = `
+                <iframe 
+                    id="documentary-video"
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/O8u0B6tG-Mc?autoplay=1&rel=0" 
+                    title="Documentary: The Fascinating World of Dragonflies, Beetles, and Millipedes" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                ></iframe>
+            `;
+            facade.classList.add('hidden');
+            wrapper.classList.remove('hidden');
         }
-
-        // Update progress every 30 seconds (for demo purposes)
-        setInterval(updateProgress, 30000);
     </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+{
+  "name": "binomugisha-films-mcp",
+  "version": "1.0.0",
+  "description": "MCP server discovery card for BINOMUGISHA Films documentary project.",
+  "tools": [
+    {
+      "name": "get_support_instructions",
+      "description": "Get step-by-step instructions to donate via Payoneer, Uganda Mobile Money, or Bank Transfer.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "payment_method": {
+            "type": "string",
+            "enum": ["payoneer", "mobile_money", "bank_transfer"]
+          }
+        }
+      }
+    }
+  ]
+}
+

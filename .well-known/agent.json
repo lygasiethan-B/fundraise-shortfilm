@@ -1,0 +1,19 @@
+{
+  "name": "BINOMUGISHA Films Campaign Agent",
+  "description": "A2A Agent card for the documentary campaign 'A Day in the Life of Insects: Bees' by Nathan Binomugisha.",
+  "version": "1.0.0",
+  "url": "https://series.binomugisha.org",
+  "skills": [
+    {
+      "name": "support_documentary",
+      "description": "Request payment details (Payoneer, Mobile Money, Bank Transfer) to support the film.",
+      "url": "https://series.binomugisha.org/#support"
+    },
+    {
+      "name": "get_film_info",
+      "description": "Retrieve information and timeline for 'A Day in the Life of Insects: Bees'.",
+      "url": "https://series.binomugisha.org/#next-project"
+    }
+  ]
+}
+

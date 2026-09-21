@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+
+# AI Content Preferences
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
 Sitemap: https://series.binomugisha.org/sitemap.xml
